@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from '@/public/resources/logo.jpg';
+import Logo from '@/public/resources/logo.png';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
