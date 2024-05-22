@@ -77,7 +77,7 @@ export default function FooterComponent(){
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mastering Entrepreneurship in digital age</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Story Telling “from RAGS to RICHES STORIES</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Life Soft Skills Training Programs for Children</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Life & Success Coach</Link></li>
+                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Life and Success Coach</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mastering Corporate Work Ethics development</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mindfulness Practitioner</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mental Technology Laws</Link></li>
@@ -99,14 +99,14 @@ export default function FooterComponent(){
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Advanced Communication skills</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Emotional Intelligence</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mindset for Transforming Business & Relationship</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Education Psychology: Advanced Learning and Teaching Methodologies</Link></li>
+                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Education Psychology Advanced Learning and Teaching Methodologies</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Mindset For Transforming Business and Master Entrepreneurship</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Advanced Teachers Teaching Diploma</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Entrepreneurship Accelerator Program</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Be the Superpower</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Gender Equality Through Economic Empowerment</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Self Confidence</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Thriving Against All Odds: "How to Get Started”</Link></li>
+                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Thriving Against All Odds &quotHow to Get Started&quot</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>The Power of Business mindset</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Developing Work Ethics in Digital Age</Link></li>
                             <li className={'hover:underline hover:text-red-600'}><Link href={''}>Active Listening</Link></li>
