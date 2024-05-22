@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mike Litman",
+  title: "Mike Litman : Global Thought Leader",
   description: "Global Thought Leader",
 };
 
