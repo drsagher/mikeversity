@@ -31,8 +31,7 @@ export default function FooterComponent(){
                         </div>
                         <div>
                             <p className={'text-lg font-bold uppercase'}>Contact</p>
-                            <p>
-                                Mobile/WAAP #:  USA +1(929) 563-0647, OMAN +96872270480
+                            <p>USA +1(929) 563-0647, OMAN +96872270480
                             </p>
                         </div>
 
