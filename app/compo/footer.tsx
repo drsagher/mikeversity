@@ -135,7 +135,7 @@ export default function FooterComponent(){
                             <FaWhatsapp size={40}/>
                         </Link>
                     </div>
-                    &copy;2024 Mike Litman @ Mikeversity
+                    &copy;2024 Mikeversity
                 </div>
 
             </div>
