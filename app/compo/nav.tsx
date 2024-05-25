@@ -12,19 +12,25 @@ export default function NavComponent() {
     ]
     return (
         <div
-            className={"flex items-start justify-center w-full bg-fixed bg-no-repeat z-20 bg-cover h-screen bg-[url('../public/hero.jpeg')]"}>
-            <div className={'flex fixed z-10 text-lg h-14 bg-gradient-to-r from-white to-gray-100 w-full'}>
+            className={"flex flex-row items-start justify-start w-full bg-fixed bg-no-repeat z-20 bg-cover h-screen bg-[url('../public/hero.PNG')]"}>
+            <div className={'flex fixed z-10 text-lg h-14 bg-red-600 w-full'}>
                 {list.map((link) => {
                     return (
                         <Link key={link.id}
                               href={'#'}
-                              className={`flex items-center justify-center hover:underline hover:text-indigo-800 px-4 font-bold`}
+                              className={`flex items-center justify-center text-gray-50 hover:underline hover:text-amber-200 px-4 font-bold uppercase`}
                         >
                             {link.name}
                         </Link>
                     );
                 })}
+
             </div>
+            {/*<div className={'flex items-center justify-center mt-96 ml-48 p-4 '}>*/}
+            {/*    <p className={'text-3xl'}>*/}
+            {/*        Empowering individuals and organizations to reach <br/>their full potential through transformative coaching <br/> and training, fostering a culture of growth,<br/> resilience,and excellence*/}
+            {/*    </p>*/}
+            {/*</div>*/}
         </div>
     )
 }

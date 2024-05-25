@@ -9,7 +9,7 @@ export default function HeroComponent(){
             <div className="flex justify-center py-4">
                 <button
                     className="flex justify-center items-center bg-black hover:bg-red-900 text-white rounded-lg gap-2 p-2">
-                    <p>Know More</p>
+                    <p>Know Mikey</p>
                 </button>
             </div>
         </div>
