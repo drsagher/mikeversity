@@ -12,7 +12,7 @@ export default function NavComponent() {
     ]
     return (
         <div
-            className={"flex flex-row items-start justify-start w-full bg-fixed bg-no-repeat z-20 bg-cover h-screen bg-[url('../public/hero.PNG')]"}>
+            className={"flex flex-row items-start justify-start w-full bg-fixed bg-no-repeat z-20 bg-cover h-screen bg-[url('../public/hero.png')]"}>
             <div className={'flex fixed z-10 text-lg h-14 bg-red-600 w-full'}>
                 {list.map((link) => {
                     return (
