@@ -204,14 +204,14 @@ export default function AboutPage(){
                         Clients</p>
                     <div className={'grid lg:grid-cols-10 sm:grid-cols-4 gap-4 p-8'}>
                         <Image height={60} src={Client1} alt={''}/>
-                        <Image height={60} src={Client2} alt={''}/>
+                        {/*<Image height={60} src={Client2} alt={''}/>*/}
                         <Image height={60} src={Client3} alt={''}/>
                         <Image height={60} src={Client4} alt={''}/>
                         <Image height={60} src={Client5} alt={''}/>
                         <Image height={60} src={Client6} alt={''}/>
                         <Image height={60} src={Client7} alt={''}/>
                         <Image height={60} src={Client8} alt={''}/>
-                        <Image height={60} src={Client9} alt={''}/>
+                        {/*<Image height={60} src={Client9} alt={''}/>*/}
                         <Image height={60} src={Client10} alt={''}/>
                         <Image height={60} src={Client11} alt={''}/>
                         <Image height={60} src={Client12} alt={''}/>
@@ -222,15 +222,15 @@ export default function AboutPage(){
                         <Image height={60} src={Client18} alt={''}/>
                         <Image height={60} src={Client19} alt={''}/>
                         <Image height={60} src={Client20} alt={''}/>
-                        <Image height={60} src={Client21} alt={''}/>
-                        <Image height={60} src={Sc1} alt={''}/>
+                        {/*<Image height={60} src={Client21} alt={''}/>*/}
+                        {/*<Image height={60} src={Sc1} alt={''}/>*/}
                         <Image height={60} src={Sc2} alt={''}/>
                         <Image height={60} src={Sc3} alt={''}/>
                         <Image height={60} src={Sc4} alt={''}/>
                         <Image height={60} src={Sc5} alt={''}/>
                         <Image height={60} src={Sc6} alt={''}/>
                         <Image height={60} src={Sc7} alt={''}/>
-                        <Image height={60} src={Sc8} alt={''}/>
+                        {/*<Image height={60} src={Sc8} alt={''}/>*/}
                         <Image height={60} src={Sc9} alt={''}/>
                         <Image height={60} src={Sc10} alt={''}/>
                         <Image height={60} src={Sc11} alt={''}/>
