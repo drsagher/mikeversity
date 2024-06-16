@@ -285,7 +285,7 @@ export default function AboutPage(){
                         <Image height={60} src={U5} alt={''}/>
                         <Image height={60} src={U6} alt={''}/>
                         <Image height={60} src={U7} alt={''}/>
-                        <Image height={60} src={U8} alt={''}/>
+                        {/*<Image height={60} src={U8} alt={''}/>*/}
                         <Image height={60} src={U9} alt={''}/>
                         <Image height={60} src={U10} alt={''}/>
                         <Image height={60} src={U11} alt={''}/>
@@ -307,7 +307,7 @@ export default function AboutPage(){
                         <Image height={60} src={W2} alt={''}/>
                         <Image height={60} src={W3} alt={''}/>
                         <Image height={60} src={W4} alt={''}/>
-                        <Image height={60} src={W5} alt={''}/>
+                        {/*<Image height={60} src={W5} alt={''}/>*/}
                         <Image height={60} src={W6} alt={''}/>
                         <Image height={60} src={W7} alt={''}/>
                         <Image height={60} src={W8} alt={''}/>
