@@ -1,8 +1,7 @@
-import Eve1 from '@/public/land/top1.jpeg'
-import Eve2 from '@/public/land/top2.jpg'
-import Eve3 from '@/public/land/top3.jpg'
+// import Eve1 from '@/public/land/top1.jpeg'
+// import Eve2 from '@/public/land/top2.jpg'
+// import Eve3 from '@/public/land/top3.jpg'
 import Eve4 from '@/public/land/top4.jpg'
-
 import Eve5 from '@/public/port/top1.jpg'
 import Eve6 from '@/public/port/top2.png'
 import Eve7 from '@/public/port/top3.jpg'
@@ -56,7 +55,7 @@ import Tall3 from '@/public/tall/top43.jpeg'
 import Tall4 from '@/public/tall/top39.jpg'
 import Tall5 from '@/public/tall/top52.jpg'
 import { MdEventRepeat } from "react-icons/md";
-import UpEv from '@/public/ahd.PNG'
+import UpEv from '@/public/ahds.png'
 
 import Image from "next/image";
 
@@ -78,12 +77,12 @@ export default function EventsPage(){
             </p>
 
             <div className={'grid grid-cols-2 gap-8 '}>
-                <Image src={Eve1} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve2} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve3} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
+                {/*<Image src={Eve1} alt={''} height={600} width={800}*/}
+                {/*       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>*/}
+                {/*<Image src={Eve2} alt={''} height={600} width={800}*/}
+                {/*       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>*/}
+                {/*<Image src={Eve3} alt={''} height={600} width={800}*/}
+                {/*       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>*/}
                 <Image src={Eve4} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
             </div>
