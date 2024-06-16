@@ -1,12 +1,12 @@
 import Client1 from '@/public/BUSINESS/bc1.jpeg';
-import Client2 from '@/public/BUSINESS/bc2.jpg';
+// import Client2 from '@/public/BUSINESS/bc2.jpg';
 import Client3 from '@/public/BUSINESS/bc3.png';
 import Client4 from '@/public/BUSINESS/bc4.webp';
 import Client5 from '@/public/BUSINESS/bc5.jpeg';
 import Client6 from '@/public/BUSINESS/bc6.jpg';
 import Client7 from '@/public/BUSINESS/bc7.png';
 import Client8 from '@/public/BUSINESS/bc8.jpeg';
-import Client9 from '@/public/BUSINESS/bc9.jpg';
+// import Client9 from '@/public/BUSINESS/bc9.jpg';
 import Client10 from '@/public/BUSINESS/bc10.png';
 import Client11 from '@/public/BUSINESS/bc11.jpeg';
 import Client12 from '@/public/BUSINESS/bc12.jpg';
@@ -17,15 +17,15 @@ import Client17 from '@/public/BUSINESS/bc17.jpg';
 import Client18 from '@/public/BUSINESS/bc18.jpg';
 import Client19 from '@/public/BUSINESS/bc19.jpg';
 import Client20 from '@/public/BUSINESS/bc20.jpg';
-import Client21 from '@/public/BUSINESS/bc21.jpg';
-import Sc1 from '@/public/SCHOOLS/sc1.jpg';
+// import Client21 from '@/public/BUSINESS/bc21.jpg';
+// import Sc1 from '@/public/SCHOOLS/sc1.jpg';
 import Sc2 from '@/public/SCHOOLS/sc2.jpeg';
 import Sc3 from '@/public/SCHOOLS/sc3.png';
 import Sc4 from '@/public/SCHOOLS/sc4.png';
 import Sc5 from '@/public/SCHOOLS/sc5.jpeg';
 import Sc6 from '@/public/SCHOOLS/sc6.png';
 import Sc7 from '@/public/SCHOOLS/sc7.jpeg';
-import Sc8 from '@/public/SCHOOLS/sc8.jpg';
+// import Sc8 from '@/public/SCHOOLS/sc8.jpg';
 import Sc9 from '@/public/SCHOOLS/sc9.jpg';
 import Sc10 from '@/public/SCHOOLS/sc10.png';
 import Sc11 from '@/public/SCHOOLS/sc11.png';
@@ -203,14 +203,14 @@ export default function AboutPage(){
                         Clients</p>
                     <div className={'grid lg:grid-cols-10 sm:grid-cols-4 gap-4 p-8'}>
                         <Image height={60} src={Client1} alt={''}/>
-                        <Image height={60} src={Client2} alt={''}/>
+                        {/*<Image height={60} src={Client2} alt={''}/>*/}
                         <Image height={60} src={Client3} alt={''}/>
                         <Image height={60} src={Client4} alt={''}/>
                         <Image height={60} src={Client5} alt={''}/>
                         <Image height={60} src={Client6} alt={''}/>
                         <Image height={60} src={Client7} alt={''}/>
                         <Image height={60} src={Client8} alt={''}/>
-                        <Image height={60} src={Client9} alt={''}/>
+                        {/*<Image height={60} src={Client9} alt={''}/>*/}
                         <Image height={60} src={Client10} alt={''}/>
                         <Image height={60} src={Client11} alt={''}/>
                         <Image height={60} src={Client12} alt={''}/>
@@ -221,15 +221,15 @@ export default function AboutPage(){
                         <Image height={60} src={Client18} alt={''}/>
                         <Image height={60} src={Client19} alt={''}/>
                         <Image height={60} src={Client20} alt={''}/>
-                        <Image height={60} src={Client21} alt={''}/>
-                        <Image height={60} src={Sc1} alt={''}/>
+                        {/*<Image height={60} src={Client21} alt={''}/>*/}
+                        {/*<Image height={60} src={Sc1} alt={''}/>*/}
                         <Image height={60} src={Sc2} alt={''}/>
                         <Image height={60} src={Sc3} alt={''}/>
                         <Image height={60} src={Sc4} alt={''}/>
                         <Image height={60} src={Sc5} alt={''}/>
                         <Image height={60} src={Sc6} alt={''}/>
                         <Image height={60} src={Sc7} alt={''}/>
-                        <Image height={60} src={Sc8} alt={''}/>
+                        {/*<Image height={60} src={Sc8} alt={''}/>*/}
                         <Image height={60} src={Sc9} alt={''}/>
                         <Image height={60} src={Sc10} alt={''}/>
                         <Image height={60} src={Sc11} alt={''}/>
