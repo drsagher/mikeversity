@@ -61,22 +61,22 @@ import Image from "next/image";
 
 export default function EventsPage(){
     return(
-        <div className={'container mx-auto flex flex-col mb-16'}>
+        <div className={'container mx-auto flex flex-col p-2'}>
 
-            <div className={'flex flex-col items-center justify-center gap-8 my-16 border-4 border-indigo-900 p-10 rounded-xl hover:border-red-800'}>
+            <div className={'flex flex-col items-center justify-center my-4 border-4 border-indigo-900 p-10 rounded-xl hover:border-red-800'}>
                 <Image src={UpEv} alt={''} height={200} width={200}/>
-                <p className={'flex items-center gap-4 text-4xl font-bold py-6 text-indigo-900 uppercase'}>Upcoming
+                <p className={'flex items-center gap-2 text-md lg:text-xl font-bold py-4 text-indigo-900 uppercase'}>Upcoming
                     Event</p>
-                <p className={'text-2xl font-bold uppercase'}>Ahd Ul Khair private School, East Side of Masjid Aqeel, East
+                <p className={'text-xs lg:text-lg text-red-600 uppercase'}>Ahd Ul Khair private School, East Side of Masjid Aqeel, East
                     Salalah, Dhofar, Oman</p>
             </div>
 
-            <p className={'flex items-center gap-4 text-5xl font-bold uppercase py-6 text-red-600'}><MdEventRepeat
+            <p className={'flex items-center gap-4 text-3xl font-bold uppercase py-6 text-red-600'}><MdEventRepeat
                 size={60}/>
                 Events
             </p>
 
-            <div className={'grid grid-cols-2 gap-8 '}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 '}>
                 <Image src={Eve1} alt={''} height={600} width={800}
                        className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
                 <Image src={Eve2} alt={''} height={600} width={800}
@@ -86,7 +86,7 @@ export default function EventsPage(){
                 <Image src={Eve4} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
             </div>
-            <div className={'grid grid-cols-4 gap-8 mt-8'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
                 <Image src={Eve5} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
                 <Image src={Eve6} alt={''} height={600} width={800}
@@ -129,7 +129,7 @@ export default function EventsPage(){
                 <Image src={Eve25} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
             </div>
-            <div className={'grid grid-cols-4 gap-8 mt-8'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
                 <Image src={Sqo1} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
                 <Image src={Sqo2} alt={''} height={600} width={800}
@@ -183,7 +183,7 @@ export default function EventsPage(){
                 <Image src={Sqo26} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
             </div>
-            <div className={'grid grid-cols-3 gap-8 mt-8'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
                 <Image src={Tall1} alt={''} height={600} width={800}
                        className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
                 <Image src={Tall2} alt={''} height={600} width={800}

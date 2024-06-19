@@ -3,10 +3,10 @@ import { FaTools } from "react-icons/fa";
 
 export default function ExpertiseComponent(){
     return(
-        <div className={'flex flex-col items-center justify-center bg-gray-50 sm:px-4 lg:px-16'}>
-            <p className={'flex items-center justify-center text-center gap-2 text-indigo-500 text-5xl pt-10'}><FaTools />
+        <div className={'flex flex-col items-center justify-center bg-gray-50 '}>
+            <p className={'flex flex-col items-center justify-center text-center text-indigo-800 text-3xl pt-10 font-bold'}><FaTools size={75}/>
                 Training Expertise</p>
-            <ul className={'grid sm:grid-cols-2 lg:grid-cols-3 gap-2 px-6 py-6 text-gray-800 sm:text-sm lg:text-lg list-disc'}>
+            <ul className={'grid sm:grid-cols-2 lg:grid-cols-3 gap-2 px-6 py-6 text-gray-800 list-disc'}>
                 <li className={'hover:underline hover:text-red-600'}><Link href={'#'}>Train the Trainers</Link></li>
                 <li className={'hover:underline hover:text-red-600'}><Link href={''}>Public Speaking</Link></li>
                 <li className={'hover:underline hover:text-red-600'}><Link href={''}>Global Thought Leadership </Link>

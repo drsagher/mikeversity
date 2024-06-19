@@ -27,124 +27,125 @@ import Ser22 from '@/public/services/ser22.jpg';
 
 export default function ServicesPage(){
     return(
-        <div className={'flex flex-col items-center justify-center mt-10 mb-16 gap-2'}>
+        <div className={'flex flex-col items-center justify-center'}>
             <div className={"grid sm:grid-cols-3 lg:grid-cols-3 h-auto w-auto "}>
                 <Image src={Svc2} alt={''} height={400} className={'w-full h-full'}/>
                 <Image src={Svc1} alt={''} height={400} className={'w-full h-full'}/>
                 <Image src={Svc3} alt={''} height={400} className={'w-full h-full'}/>
             </div>
-            <p className={'flex items-center text-5xl font-bold mt-16 text-red-'}><FcServices size={75}/>
-                Services</p>
-            <div className={'grid sm:grid-cols-1 lg:grid-cols-2 gap-8 p-4 items-center justify-center'}>
-                <div className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser1} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Corporate Services</p>
+            <p className={'flex flex-col items-center text-3xl font-bold text-red-600 pt-8'}><FcServices size={55}/>
+                Services
+            </p>
+            <div className={'grid grid-cols-1 p-1 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 pb-8'}>
+                <div className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser1} alt={''} className={'w-24 h-24 rounded-lg'} />
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Corporate Services</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser4} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Workshops and Keynotes </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser4} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Workshops and Keynotes </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser7} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Train the Trainers</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser7} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Train the Trainers</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser9} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Consultancy </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser9} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Consultancy </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser2} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Online Courses </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser2} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Online Courses </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser5} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Webinars and Virtual Events </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser5} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Webinars and Virtual Events </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser8} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Global Thought Leadership</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser8} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Global Thought Leadership</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser11} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Speaking Engagements </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser11} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Speaking Engagements </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser3} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Curriculum Development </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser3} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Curriculum Development </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser6} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Leadership Development </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser6} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Leadership Development </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser9} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Soft Skills Development </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser9} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Soft Skills Development </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser12} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Life Coaching and Mindfulness </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser12} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Life Coaching and Mindfulness </p>
                 </div>
 
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser13} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Standard American Accent Elimination </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser13} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Standard American Accent Elimination </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser14} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Moderating and Talk Shows </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser14} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Moderating and Talk Shows </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser15} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Story Telling </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser15} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Story Telling </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser16} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>NLP</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser16} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>NLP</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser17} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Clear Speech Therapy</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser17} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Clear Speech Therapy</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser18} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Entrepreneurship </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser18} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Entrepreneurship </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser19} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Public Speaking</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser19} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Public Speaking</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser20} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Holistic Healing</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser20} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Holistic Healing</p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser21} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Kinesthetic Learning </p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser21} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Kinesthetic Learning </p>
                 </div>
                 <div
-                    className={'flex flex-row items-center justify-start gap-4 h-36 w-96 bg-red-900 p-2 text-white hover:bg-indigo-900 transition ease-in-out'}>
-                    <Image src={Ser22} alt={''} height={50} width={100}/>
-                    <p className={'text-xl border-t-2 border-amber-300 pt-4'}>Personal Development</p>
+                    className={'flex p-1 gap-2 items-center justify-start bg-red-900 text-white hover:bg-indigo-900 transition ease-in-out rounded-lg'}>
+                    <Image src={Ser22} alt={''} className={'w-24 h-24 rounded-lg'}/>
+                    <p className={'text-lg border-t-2 border-amber-300 pt-4'}>Personal Development</p>
                 </div>
             </div>
         </div>
