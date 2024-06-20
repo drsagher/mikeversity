@@ -15,7 +15,7 @@ import { CiGlobe } from "react-icons/ci";
 export default function VisionComponent(){
     return(
         <div className={'grid grid-cols-1 md:grid-cols-2 '}>
-            <div className={'flex flex-col items-center justify-center  text-gray-50 text-center bg-gradient-to-r from-indigo-800 to-indigo-900 md:rounded-r-full p-2'}>
+            <div className={'flex flex-col items-center justify-center  text-gray-50 text-center bg-indigo-950 md:rounded-r-full p-2'}>
                 <p className="text-base sm:text-md lg:text-lg xl:text-5xl font-bold text-end flex items-center justify-center ">
                     <CiGlobe/>
                     Vision</p>

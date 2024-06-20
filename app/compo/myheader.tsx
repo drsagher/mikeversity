@@ -24,9 +24,9 @@ export default function MyHeaderComponent(){
     }
     return(
         <div
-            className={'flex flex-row justify-between p-2 lg:p-6 text-xs bg-gradient-to-t from-indigo-600 to-indigo-900'}>
+            className={'flex flex-row justify-between p-2 lg:p-6 text-xs bg-indigo-950'}>
             <div className={'flex flex-col gap-2 sm:grid-cols-1 md:grid-cols-1 w-full text-white'}>
-                <p className={'text-lg sm:text-2xl md:text-3xl lg:text-5xl uppercase font-bold'}>mike litman</p>
+                <p className={'text-lg sm:text-2xl md:text-3xl lg:text-4xl uppercase font-bold'}>mike litman</p>
                 <p className={'text-xs sm:text-xs md:text-md uppercase'}>global thought leader</p>
             </div>
             <div className={'hidden sm:flex items-center justify-center gap-2 p-1 sm:text-sm lg:text-base'}>
