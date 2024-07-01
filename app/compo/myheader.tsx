@@ -6,7 +6,6 @@ import { RiMenuUnfold2Fill } from "react-icons/ri";
 import { RiMenuFold2Fill } from "react-icons/ri";
 
 export default function MyHeaderComponent(){
-    const brandName = 'MVUT';
     const pathname = usePathname();
     const isActive = (link: string) => link === pathname;
 
