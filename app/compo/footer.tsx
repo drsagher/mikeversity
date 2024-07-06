@@ -16,39 +16,39 @@ export default function FooterComponent(){
                     <div className={'p-2'}>
                         <h2 className={'text-lg font-bold uppercase text-amber-400'}>ENGLISH SPEAKING COURSES</h2>
                         <ul className={'text-gray-200 list-disc'}>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Speaking English
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/kindergarten'}>Speaking English
                                 Language Course For Kindergarten</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>American Sounds
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/soundtraining'}>American Sounds
                                 Training For Kids (Clear Speech Therapy Training)</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Standard American
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/accentelimination'}>Standard American
                                 Accent Elimination Training</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Speaking English
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/speaking'}>Speaking English
                                 For Beginners</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Speaking English
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/advLearners'}>Speaking English
                                 For Advanced Learners</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Corporate Standard
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/corporate'}>Corporate Standard
                                 American Accent Training</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Speaking English
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/toldlers'}>Speaking English
                                 Program For Toddlers & Children</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Life Skills
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/lifeskills'}>Life Skills
                                 Training Program For Children And Youth</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>99 Rules Of
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/rules99'}>99 Rules Of
                                 Speaking English For Non-Native Speakers</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Advanced Standard
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/ceos'}>Advanced Standard
                                 American Accent Training Program For CEOs</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>English
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/v5'}>English
                                 Communication Skills V-5</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Kinesthetic
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/kinesthetic'}>Kinesthetic
                                 Language (How To Read Minds)</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Body Language: How
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/liar'}>Body Language: How
                                 To Detect A Liar</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Body Language For
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/leaders'}>Body Language For
                                 Leaders</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Teachers Speaking
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/teachers'}>Teachers Speaking
                                 English Language As Foreign Speakers</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Effective
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/workplace'}>Effective
                                 Communication Skills At Workplace And Home</Link></li>
-                            <li className={'hover:underline hover:text-red-600'}><Link href={''}>Public Speaking For
+                            <li className={'hover:underline hover:text-red-600'}><Link href={'/En/publicspeaking'}>Public Speaking For
                                 Children, Teens And Adults</Link></li>
                         </ul>
                     </div>
@@ -65,8 +65,7 @@ export default function FooterComponent(){
                             </address>
                             <address className={'flex items-center text-md gap-2'}>
                                 <Image height={25} src={China} alt={''}/> 1304, Block E, Pingji Shangyuan Erqi, Xinhe
-                                Road
-                                No. 2, District, Shenzhen
+                                Road No. 2, District, Shenzhen, China
                             </address>
                             <address className={'flex items-center text-md gap-2'}>
                                 <Image height={25} src={Oman} alt={''}/> Ahd Ul Khair private School, East Side of
