@@ -9,13 +9,13 @@ import LikaOkhanashvili from '@/public/team/LikaOkhanashvili.jpeg';
 import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
 import ChanieMessinger  from '@/public/team/ChanieMessinger.jpg';
 import SHAHIDIQBAL  from '@/public/team/SHAHIDIQBAL.jpeg';
-import DrAmb  from '@/public/team/DrAmb.jpg';
-import DRANITA  from '@/public/team/DRANITA.jpg';
-import IlonaParunakova  from '@/public/team/IlonaParunakova.jpg';
+import DrAmb  from '@/public/team/DrAmb.png';
+import DRANITA  from '@/public/team/DRANITA.png';
+import IlonaParunakova  from '@/public/team/IlonaParunakova.png';
 import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
 import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
-import LayalGhaddar  from '@/public/team/LayalGhaddar.jpg';
-import MahaShhadeh  from '@/public/team/MahaShhadeh.jpg';
+import LayalGhaddar  from '@/public/team/LayalGhaddar.png';
+import MahaShhadeh  from '@/public/team/MahaShhadeh.png';
 import Image from "next/image";
 
 export default function TeamPage(){
