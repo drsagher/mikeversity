@@ -89,7 +89,7 @@ export default function TeamPage(){
 
     return (
         <div className={'container mx-auto flex flex-col items-center justify-center py-6'}>
-            <p className={'text-lg md:text-3xl font-bold text-center py-2 lg:py-10 uppercase'}>Our Team</p>
+            <p className={'text-lg md:text-3xl font-bold text-center py-2 lg:py-10 uppercase'}>Our Team Profile</p>
             <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 px-6 '}>
                 {team.map((link) => {
                     return (
