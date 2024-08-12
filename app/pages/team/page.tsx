@@ -25,7 +25,7 @@ export default function TeamPage(){
             <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 px-6 '}>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrElizabethLucas} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Prof. Dr. Queen Elizabeth Lucas-Afolalu</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -36,7 +36,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrRosalindWillis} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. Rosalind Willis</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -47,7 +47,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={ChanieMessinger} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. Chanie Messinger</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -58,7 +58,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={LikaOkhanashvili} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Lika Okhanashvili</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -69,7 +69,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={TeklaKiparoidze} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Tekla Kiparoidze</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -81,7 +81,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrLaKishaJames} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. LaKisha James</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -93,7 +93,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrMadhviBorse} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. Madhvi Borse</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -105,7 +105,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrShawnSaxton} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. Shawn Saxton </h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -116,7 +116,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={HerdianaDewiNurfika} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Herdiana Dewi Nurfika</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -127,7 +127,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={CalebTimilehinSamuel} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Caleb Timilehin Samuel</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -138,7 +138,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DrAmb} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Dr. Amb Omotola Sobowale Lagos</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -149,7 +149,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={VeronicaRozenfeld} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Veronica Rozenfeld</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -161,7 +161,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DanelleBoyles} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Danelle Boyles</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -173,7 +173,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={IlonaParunakova} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Ilona Parunakova</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -184,7 +184,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={DRANITA} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>DR. ANITA C. POWELL</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -195,7 +195,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={SHAHIDIQBAL} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>SHAHID IQBAL</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -206,7 +206,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={LayalGhaddar} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Layal Ghaddar</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
@@ -218,7 +218,7 @@ export default function TeamPage(){
                 </div>
                 {/* */}
                 <div
-                    className={'w-96 h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
                     <Image src={MahaShhadeh} alt={''} className={'h-96 w-full'}/>
                     <h2 className={'font-bold text-lg text-white'}>Maha Shhadeh</h2>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
