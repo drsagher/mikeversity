@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import MyHeaderComponent from "@/app/compo/myheader";
 import FooterComponent from "@/app/compo/footer";
 import Template from "@/app/template";
 
 // const inter = Inter({ subsets: ["latin"] });
-const ubuntu = Ubuntu({
-    weight: ['500'],
+const open_Sans = Open_Sans({
+    weight: ['400'],
     subsets: ['latin'],
 })
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-    <body className={ubuntu.className}>
+    <body className={open_Sans.className}>
     <MyHeaderComponent/>
     <Template>
         {children}
