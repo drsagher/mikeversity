@@ -10,7 +10,7 @@ import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
 import ChanieMessinger  from '@/public/team/ChanieMessinger.jpg';
 import SHAHIDIQBAL  from '@/public/team/SHAHIDIQBAL.jpeg';
 import DrAmb  from '@/public/team/DrAmb.jpg';
-import DRANITA  from '@/public/team/DRANITA.jpg';
+import DRANITA  from "@/public/team/DRANITA.jpg";
 import IlonaParunakova  from '@/public/team/IlonaParunakova.jpg';
 import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
 import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
