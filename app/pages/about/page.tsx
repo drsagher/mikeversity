@@ -18,7 +18,6 @@ import Client18 from '@/public/BUSINESS/bc18.jpg';
 import Client19 from '@/public/BUSINESS/bc19.jpg';
 import Client20 from '@/public/BUSINESS/bc20.jpg';
 // import Client21 from '@/public/BUSINESS/bc21.jpg';
-
 // import Sc1 from '@/public/SCHOOLS/sc1.jpg';
 import Sc2 from '@/public/SCHOOLS/sc2.jpeg';
 import Sc3 from '@/public/SCHOOLS/sc3.png';
@@ -83,7 +82,7 @@ import U4 from '@/public/UNIVERFSITIES/u4.jpg';
 import U5 from '@/public/UNIVERFSITIES/u5.jpg';
 import U6 from '@/public/UNIVERFSITIES/u6.jpg';
 import U7 from '@/public/UNIVERFSITIES/u7.jpeg';
-import U8 from '@/public/UNIVERFSITIES/u8.jpg';
+// import U8 from '@/public/UNIVERFSITIES/u8.jpg';
 import U9 from '@/public/UNIVERFSITIES/u9.png';
 import U10 from '@/public/UNIVERFSITIES/u10.png';
 import U11 from '@/public/UNIVERFSITIES/u11.jpg';
@@ -106,7 +105,7 @@ import W1 from '@/public/ORGANIZATION/w1.jpg';
 import W2 from '@/public/ORGANIZATION/w2.jpeg';
 import W3 from '@/public/ORGANIZATION/w3.jpeg';
 import W4 from '@/public/ORGANIZATION/w4.png';
-import W5 from '@/public/ORGANIZATION/w5.jpg';
+// import W5 from '@/public/ORGANIZATION/w5.jpg';
 import W6 from '@/public/ORGANIZATION/w6.jpeg';
 import W7 from '@/public/ORGANIZATION/w7.png';
 import W8 from '@/public/ORGANIZATION/w8.png';
@@ -123,86 +122,355 @@ import W18 from '@/public/ORGANIZATION/w18.png';
 import W19 from '@/public/ORGANIZATION/w19.jpg';
 import W20 from '@/public/ORGANIZATION/w20.png';
 import W21 from '@/public/ORGANIZATION/w21.png';
-
 import Mikey from '@/public/mtop.png';
 import Image from "next/image";
 import { GrWorkshop } from "react-icons/gr";
 import { GiAchievement } from "react-icons/gi";
 import { GrUserExpert } from "react-icons/gr";
 import { FaUsersBetweenLines } from "react-icons/fa6";
+
+
 export default function AboutPage(){
     return(
-        <div className={'flex flex-row min-h-screen gap-4 w-[90%] mx-auto p-2'}>
-            <div className={'flex flex-col w-1/2 p-2'}>
-                <div className={'bg-red-700 px-6 my-6 rounded-xl p-4 text-gray-50 hover:bg-indigo-900 hover:scale-110 hover:skew-x-2'}>
-                    <h2 className={'sm:text-lg lg:text-3xl uppercase font-bold py-4'}>Trainer Profile</h2>
-                    <p className={'leading-relaxed lg:text-xl sm:text-xs'}>
-                        Reflecting on timeless lessons from his life narrative, today&apos;s impact will be enduring. Mike, a
-                        visionary global thought leader, serves the underserved with unprecedented innovation. Employing
-                        a
-                        diverse range of cognitive, emotional, and behavioral skills, he catalyzes profound global
-                        change.
-                        Aspiring leaders can glean strategic insights from Mike&apos;s motivational prowess, distinguishing
-                        him
-                        as a true strategic leader. Renowned as a motivational speaker and author of the #1 bestseller
-                        &quot;Passionate Quantum Success&quot; He has two decades of diverse training experience. Prioritizing
-                        innovation over accolades, he champions &quot;being the first&quot; in his endeavors. Through platforms
-                        like
-                        DISCOVER PAKISTAN TV, HOPE TV, FM 87.6, IIU, Online workshops, seminars, webinars, and extensive
-                        training initiatives, He has impacted over 500 million individuals worldwide. His groundbreaking
-                        360-degree courses promise invaluable and irrefutable transformation, propelling humanity
-                        towards
-                        heightened mindfulness and consciousness.
-                    </p>
-                </div>
-                <div className={'px-4 py-6 rounded-xl my-8 '}>
-                    <h2 className={'flex items-center lg:text-xl font-bold text-indigo-900 sm:text-sm'}> <GrWorkshop size={55}/>
-                        CONFERENCES TRAININGS/WORKSHOPS</h2>
-                    <ul className={'list-disc pl-6 leading-relaxed text-indigo-900 sm:text-sm lg:text-base'}>
-                        <li>Attended the 2nd international conferences on “ENLIGHTENED MODERATION: A NEW WORLD ORDER?”
-                            by Shifa College of Medicine, Student Society
-                        </li>
-                        <li>Attended One day training on MOTIVATION FOR EMPLOYEES PEEK from “Australian Center for
-                            education and training “with the collaboration of NPO, ACET and Rawalpindi Chamber of
-                            Commerce, Pakistan
-                        </li>
-                        <li>Attended the Business Idea completion 2010 as jury in Fast Business Club Lahore, conducted
-                            at National University of Management and Emerging Sciences Lahore.
-                        </li>
-                        <li>Gender & Development, Community mobilization and young people behavior</li>
-                        <li>24th Annual General Meeting and Conference of PSDE, “Economic Sustainability in a Globalize
-                            World” to be held in March-April, 2009.
-                        </li>
-                        <li>Attended 4 days training on SOP (Standard Operating Procedures) of National Commission for
-                            Human Development on Procurement, HR, Administration, Office Management and IT Conducted by
-                            Head.
-                        </li>
-                        <li>Attended training workshops for Good governance (SNEP, UNDP, ECP) at Deputy Election Commission office Lahore, Pakistan</li>
-                        <li>Attended Trainings of Soft Skills at Ovex Technologies USA- Premier BPO Call Center, LHR, Pakistan.</li>
-                        <li>Completed on Jon Training in Exotic Technologies (USA, Premier BPO Call Center) on Telemarketing and Tele sales Projects.</li>
-                        <li>Attended the one-day training on Gender & Development, Identification and streamlining Strategies in underdevelopment</li>
-                        <li>International conference on &quot;E- Learning & distance Education Conference&quot; held on 30 March, 2009 in HEC.</li>
-                        <li>Attended the &quot;survey of USA history lecture 09&quot; to be held on March, 2009 in National Library Islamabad.</li>
-                        <li>One-day Training on &quot;MOTIVATION OF EMPLOYEES PEAK PERFORMACE&quot; facilitated by HB SHAW AUS organized by Islamabad Chamber of Commerce and Industry, Pakistan</li>
-                        <li>Participated in One-day training on &quot;International marketing communications&quot;.</li>
-                        <li>Attended the One-day training on &quot;A new concept of Community mobilization&quot; and Attended the two days training on &quot;Young people & societal behaviors&quot;.</li>
+            <div className={'flex flex-col items-center justify-center'}>
 
-                    </ul>
+                <div className={'flex flex-col items-center justify-center lg:gap-8 lg:flex-row bg-amber-200 p-8'}>
+                    <div className={'bg-red-700 rounded-xl lg:w-[50%] text-gray-50 hover:bg-indigo-900 p-2'}>
+                        <h2 className={'text-md lg:text-xl uppercase font-bold '}>Trainer Profile</h2>
+                        <p className={'text-sm lg:text-md xl:text-lg p-2 leading-relaxed flex-wrap '}>
+                            Reflecting on timeless lessons from his life narrative, today&apos;s impact will be
+                            enduring.
+                            Mike, a visionary global thought leader, serves the underserved with unprecedented
+                            innovation.
+                            Employing a diverse range of cognitive, emotional, and behavioral skills, he catalyzes
+                            profound
+                            global change. Aspiring leaders can glean strategic insights from Mike&apos;s motivational
+                            prowess, distinguishing him as a true strategic leader. Renowned as a motivational speaker
+                            and
+                            author of the #1 bestseller &quot;Passionate Quantum Success&quot; He has two decades of
+                            diverse
+                            training experience. Prioritizing innovation over accolades, he champions &quot;being the
+                            first&quot; in his endeavors. Through platforms like DISCOVER PAKISTAN TV, HOPE TV, FM 87.6,
+                            IIU, Online workshops, seminars, webinars, and extensive training initiatives, He has
+                            impacted
+                            over 500 million individuals worldwide. His groundbreaking 360-degree courses promise
+                            invaluable
+                            and irrefutable transformation, propelling humanity towards heightened mindfulness and
+                            consciousness.
+                        </p>
+                    </div>
+                    <Image src={Mikey} alt={''} className={'hidden lg:flex w-96 h-96 '}/>
                 </div>
-                <div className={'bg-blue-200 px-4 py-6 rounded-xl my-8 text-red-600 hover:text-indigo-900 hover:bg-red-200'}>
-                    <h2 className={'flex items-center text-xl font-bold sm:text-sm'}><GrUserExpert size={55}/>
-                        Entrepreneurial Experience</h2>
-                    <ul className={'list-disc pl-6 leading-relaxed sm:text-sm lg:text-base'}>
-                        <li>President Founder & CEO Mike&apos;s International – inspired, motivated and trained millions of learning associates at Corporate, Universities, Public Departments, schools</li>
-                        <li>Chairman ARP Church – Non-Profit – Trained kids, teens and adults helping them to build their highest level of self-esteem at Sunday English Language schools at ARP church.</li>
-                        <li>Brand Ambassador for 36 companies worldwide</li>
-                    </ul>
+
+                <div className={'lg:container'}>
+                    <div className={'flex flex-col items-start p-2 '}>
+                        <h2 className={'flex items-center lg:text-xl font-bold text-red-900 sm:text-sm'}><GiAchievement size={65}/>
+                            RECENT ACCOMPLISHMENTS</h2>
+                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg pl-1 leading-relaxed text-red-900 sm:text-sm '}>
+                            <li>Chief Guest Speaker at Dr. Lyn West-man (Consultant Microsoft, Malinda Gates Foundation
+                                and
+                                US
+                                Army)
+                                5 days event on TRAUMA at John C. Maxwell TILTI Islamabad.
+                            </li>
+                            <li>Chaired MYEP (Minority Youth Exposure Program) conference at Quid-e-Azam University as
+                                Chief
+                                Guest
+                                Motivational speaker
+                            </li>
+                            <li>5 Days CAPACITY BUILDING TRAINING OF EDUCATION STAFF organized by National Commission
+                                for
+                                Human
+                                Development - Ministry of Federal Education & Professional Training Pakistan
+                            </li>
+                            <li>Delegated a FIRST 5 days INTERNATIONAL CONFERENCE ON PSYCHODRAMA “Center for Trauma
+                                Research
+                                &
+                                Psychosocial Interventions” facilitated by Aberdeen University of Australia, Chaired by
+                                David
+                                Alexandar.
+                            </li>
+                            <li>Delegated and represented Commonwealth Youth Program of two days “international
+                                conference
+                                on
+                                Psycho
+                                trauma” on Earthquake 2005 and Suicide attacks in Pakistan held in Jinnah Convention
+                                Center
+                                Islamabad.
+                            </li>
+                            <li>Organized by National University of Science & Technology Pakistan (NUST) sponsored by
+                                Motivational Seminar on LIFE & SUCCESS at THE FAZALEHAQ COLLEGE MARDAN KPK, Khyber
+                                Pakhtunkhwa,
+                                Pakistan.
+                            </li>
+                            <li>Inaugurated Pakistan Management Excellence Award (PMEA) at Pakistan Management
+                                Institute,
+                                Pakistan, Lahore Chapter.
+                            </li>
+                            <li>Guest Speaker at FM PLANET 87.6. 22 Reasons why educated people are broke and SUCCESS
+                                MINDSET
+                            </li>
+                            <li>Worked in joint venture with world class training organizations from USA, AUS, CHINA,
+                                UK,
+                                OMAN.
+                            </li>
+                            <li>Inaugurated PMEA. I spoke to 360 CEOs on perspective 01- excellence and international
+                                best
+                                practices.
+                            </li>
+                            <li>RESET OF SUCCESS MINDSET WORKSHOP” Guest of Honor and Guest Speaker at NAMAL UNIVERSITY,
+                                MIANWALI, PAKISTAN.
+                            </li>
+                            <li>Inspired 100 DATICS AI leaders for PRODUCTIVITY: DEVELOPING WORK ETHICS IN DIGITAL
+                                ENVIRONMENT
+                                at LHR, Pakistan.
+                            </li>
+                            <li>Inspired millions of souls including young kids, Teens, Adults at Guangdong Province,
+                                SHENZHEN
+                                UNIVERSITY - CHINA, HONGKONG, QATAR, FUTIAN, and WIDOWS OF THE WORLD STEVE JOBS OUTLET
+                                in
+                                China.
+                            </li>
+                            <li>One Week Training Workshop at AWKUM- Abdul Wali Khan University Mardan, Khyber
+                                Pakhtunkhwa
+                                KPK,
+                                Pakistan.
+                            </li>
+                            <li>100s of multi-level schools in the territory of Khyber Pakhtunkhwa (KPK) have been
+                                trained
+                                in
+                                Standard American Accent Elimination, Natural English Speaking, Motivation, Life Skills,
+                                and
+                                Success.
+                            </li>
+                            <li>Adjudicated the BUSINESS IDEA COMPETITION 2010 as jury in Fast Business Club Lahore,
+                                conducted
+                                at National University of Management and Emerging Sciences Lahore, Pakistan.
+                            </li>
+                            <li>Mega Business Conference SEASON 12 “BEST GOOSE-BUMPING & MOTIVATIONAL SPEAKER IN AISA
+                                AWARD
+                                2021” Islamabad Pakistan.
+                            </li>
+                            <li>Guest & keynote Speaker at ARFAKAREEM Tower on WORK ETHICS, Trained 100 IT Managers.
+                            </li>
+                            <li>Guest Speaker at University of Management and Technology, LHR Pakistan for Motivational
+                                Talk.
+                            </li>
+                            <li>Trained 100 Ufone Trainers for Standard American Accent Dialect/Non-Regional Accent,
+                            </li>
+                            <li>Illuminated 10 million professionals and general masses through BREAKTHROUGH Broadcasts
+                                on
+                                social media FB Live with Dr. Channie Messenger USA, Veronica RozenFeld US
+                            </li>
+                            <li>Women in Leadership: Developing Entrepreneurial Mindset University of Lahore, Pakistan
+                                Institute
+                                of Fashion and Design Lahore, Virtual University of Pakistan” KARO MUMKIN” in
+                                collaboration
+                                of
+                                British Council of Pakistan.
+                            </li>
+                            <li>Key Note Speaker at 7 days Thrive Conference “INCREASED CAPACITY” at Heritage Global
+                                Leadership
+                                & Mentor Institute (HGMI) Nigeria and Africa.
+                            </li>
+                            <li>World Mental Health Day: Brand Ambassador and Guest Speaker Indonesia</li>
+                            <li>LIVE YOUR LIFE TO YOUR FULLEST POTENTIAL, Government Technology College BRW, Pakistan
+                            </li>
+                            <li>Guest speaker and brand ambassador at NAMAL UNIVERSTY “SUCCESS MINDSET”</li>
+                            <li>DISCOVER PAKISTAN HD TV: “THRIVE ON LIFE PODCAST” 47M Viewers, 10M Subscribers</li>
+                            <li>THE POWER OF BUSINESS MINDSET SEMINAR WITH– Government College of Commerce, Pakistan
+                            </li>
+                            <li>Power of Winning Business Mindset at SUBTLE COMMERCE - AMAZON EXPRTS.</li>
+                            <li>NIBAF event on DEVELOPING WORK ETHICS at State Bank of Pakistan (SBP) Islamabad,
+                                Pakistan.
+                            </li>
+                            <li>“Business Conference” by Raymond Banzuela Business Consultancy Services Philippine,
+                                2024.
+                            </li>
+                            <li>Entrepreneurship Accelerator Program: Team Building and Leadership by Bliss Education
+                                Indonesia.
+                            </li>
+                            <li>WIND OF CHANGE” by CHILPARCO INTERNATIONAL. Podcast with Dr. Alka Mahajan Indonesia</li>
+                            <li>Guest Speaker and Trainer, MIND YOUR OWN BUSINESS: MASTERING ENTREPRENEURSHIP IN DIGITAL
+                                ENVIRONMENT CHAPTER#1 at IIU Internship International University LEBNON.
+                            </li>
+                            <li>Speaker at International education summit “EDUTALK” Azerbaijan with IIU International
+                                Internship
+                                University.
+                            </li>
+                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #1 BE THE SUPERWOMEN at IIU
+                                International Internship University-WEC, Romania.
+                            </li>
+                            <li>Distinguished guest speaker at the INERNATIONAL DAY OF EDUCATION CONFERENCE with
+                                Heartfelt
+                                Teachers Network Global Zimbabwe.
+                            </li>
+                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #2 SUCCESS MINDSET OF WOMEN
+                                at
+                                IIU
+                                International Internship University-WEC, Romania.
+                            </li>
+                            <li>Advanced Teacher Training Diploma Programs CHORT II” 2 days training on EDUCATION
+                                PSYCHGOLOY
+                                IN
+                                WORLD PERSPECTIVE” with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia,
+                                LIBERIA.
+                            </li>
+                            <li>Guest Keynote Speaker at International Association of Global Education Georgia in
+                                INTERNATIONAL
+                                EDCUCATION SUMMIT.
+                            </li>
+                            <li>Guest Speaker at ELITE GLOBLA LEADERSHIP CLUB “Unleash your leadership Genius” with Host
+                                Veronica Ceban, Netherland.
+                            </li>
+                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #3 HOW TO TAKE CRITICISM
+                                LIKE A
+                                CHAMPION at IIU International Internship University-WEC, Romania.
+                            </li>
+                            <li>Guest Speaker for TALK SHOW on HOW TO RAISE SELF-ESTEEM IN WOMEN at INTERNATIONAL
+                                INTERNSHIP
+                                UNIVERSITY WEC- LEBNON.
+                            </li>
+                            <li>WORLD’S PHENOMENAL ROCKSTAR AND TRANSFORMATIONAL LEADERSHIP AWARD 2024 awarded by Great
+                                Idea
+                                Events Management Services, RB Business Consultancy Services Philippine Chen Kuang
+                                School
+                                Philippine, BPMI Leadership and Life Coaching Institute Texas USA, and World Class
+                                Academy
+                                of
+                                Excellence Florida USA declared Mike Litman
+                            </li>
+                            <li>MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS “Guest Speaker”
+                                organized
+                                by
+                                YES YOU CAN INTERNATIONAL (YYCI) UK & ZIM
+                            </li>
+                            <li>BUSINESS LEADERSHIP STYLES “Guest Speaker” organized by YES YOU CAN INTERNATIONAL (YYCI)
+                                UK
+                                &
+                                ZIM
+                            </li>
+                            <li>ADVANCED CAREER DEVELOPMENT PROGRAM CHORT III” 2 days training on Advanced Communication
+                                Skills”
+                                with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia, LIBERIA.
+                            </li>
+                            <li>2 DAYS - MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS. Take-Away:
+                                Take
+                                Full Responsibility of Your Own Life “150 BUSINESS IDEAS WITH ZERO TO MINIMUM RESOURCE
+                                with
+                                Yes
+                                YOU can International UK & ZIMBABWE
+                            </li>
+                            <li>International Conference on &quot;WOMEN EMPOWERMENT&quot; Orchestrated by General
+                                Education Network
+                                (GEN-VEIU).
+                            </li>
+                            <li>MAINTAINING POSITIVE MINDSET” Guest of Honor and Guest Speaker at the SMART SCHOOL
+                                GAGOO.
+                            </li>
+                            <li>“INNOVATION IN TEACHING” Chief Guest speaker at Global Education Network USA
+                                orchestrated by
+                                DR.
+                                H.E. RITA AGUILAR USA.
+                            </li>
+                            <li>TRANSFORMATIONAL LEADERSHIP & MINDSET FOR TRANSFORMING RELATIONSHIP CONFERENCE”
+                                Chairperson,
+                                President, Speaker and Moderator organized by YES YOU CAN INTERNATIONAL (YYCI) UK.
+                            </li>
+                            <li>Guest speaker & trainer on EDUCATION PSYCHOLOGY with TAKEAWAY of ADVANCED LEARNING &
+                                TEACHING
+                                METHODOLOGIES in world perspective of world case studies with KEY CONSULTING and Q
+                                CONSULTING
+                                Georgia
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className={'flex flex-col items-start p-2'}>
+                        <h2 className={'flex items-center lg:text-xl font-bold text-indigo-900 sm:text-sm'}><GrWorkshop
+                            size={55}/>
+                            CONFERENCES TRAININGS/WORKSHOPS</h2>
+                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg pl-1 leading-relaxed text-indigo-900 sm:text-sm'}>
+                            <li>Attended the 2nd international conferences on “ENLIGHTENED MODERATION: A NEW WORLD
+                                ORDER?”
+                                by Shifa College of Medicine, Student Society
+                            </li>
+                            <li>Attended One day training on MOTIVATION FOR EMPLOYEES PEEK from “Australian Center for
+                                education and training “with the collaboration of NPO, ACET and Rawalpindi Chamber of
+                                Commerce, Pakistan
+                            </li>
+                            <li>Attended the Business Idea completion 2010 as jury in Fast Business Club Lahore,
+                                conducted
+                                at National University of Management and Emerging Sciences Lahore.
+                            </li>
+                            <li>Gender & Development, Community mobilization and young people behavior</li>
+                            <li>24th Annual General Meeting and Conference of PSDE, “Economic Sustainability in a
+                                Globalize
+                                World” to be held in March-April, 2009.
+                            </li>
+                            <li>Attended 4 days training on SOP (Standard Operating Procedures) of National Commission
+                                for
+                                Human Development on Procurement, HR, Administration, Office Management and IT Conducted
+                                by
+                                Head.
+                            </li>
+                            <li>Attended training workshops for Good governance (SNEP, UNDP, ECP) at Deputy Election
+                                Commission office Lahore, Pakistan
+                            </li>
+                            <li>Attended Trainings of Soft Skills at Ovex Technologies USA- Premier BPO Call Center,
+                                LHR,
+                                Pakistan.
+                            </li>
+                            <li>Completed on Jon Training in Exotic Technologies (USA, Premier BPO Call Center) on
+                                Telemarketing and Tele sales Projects.
+                            </li>
+                            <li>Attended the one-day training on Gender & Development, Identification and streamlining
+                                Strategies in underdevelopment
+                            </li>
+                            <li>International conference on &quot;E- Learning & distance Education Conference&quot; held
+                                on
+                                30 March, 2009 in HEC.
+                            </li>
+                            <li>Attended the &quot;survey of USA history lecture 09&quot; to be held on March, 2009 in
+                                National Library Islamabad.
+                            </li>
+                            <li>One-day Training on &quot;MOTIVATION OF EMPLOYEES PEAK PERFORMACE&quot; facilitated by
+                                HB
+                                SHAW AUS organized by Islamabad Chamber of Commerce and Industry, Pakistan
+                            </li>
+                            <li>Participated in One-day training on &quot;International marketing
+                                communications&quot;.
+                            </li>
+                            <li>Attended the One-day training on &quot;A new concept of Community mobilization&quot; and
+                                Attended the two days training on &quot;Young people & societal behaviors&quot;.
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div
+                        className={'flex flex-col items-start p-2 '}>
+                        <h2 className={'flex items-center lg:text-xl font-bold sm:text-sm'}><GrUserExpert size={55}/>
+                            Entrepreneurial Experience</h2>
+                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg leading-relaxed '}>
+                            <li>President Founder & CEO Mike&apos;s International – inspired, motivated and trained
+                                millions
+                                of learning associates at Corporate, Universities, Public Departments, schools
+                            </li>
+                            <li>Chairman ARP Church – Non-Profit – Trained kids, teens and adults helping them to build
+                                their highest level of self-esteem at Sunday English Language schools at ARP church.
+                            </li>
+                            <li>Brand Ambassador for 36 companies worldwide</li>
+                        </ul>
+                    </div>
                 </div>
-            {/*   Clients */}
-                <div className={'border border-gray-50 p-2'}>
-                    <p className={'flex items-center text-3xl font-bold text-red-600 p-2 gap-2'}><FaUsersBetweenLines size={45}/>
+
+                {/*   Clients */}
+                <div className={''}>
+                    <p className={'flex items-center text-3xl font-bold text-red-600 p-2 gap-2'}><FaUsersBetweenLines
+                        size={45}/>
                         Clients</p>
-                    <div className={'grid lg:grid-cols-10 sm:grid-cols-4 gap-4 p-8'}>
+                    <div className={'grid grid-cols-4 gap-2 p-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12'}>
                         <Image height={60} src={Client1} alt={''}/>
                         {/*<Image height={60} src={Client2} alt={''}/>*/}
                         <Image height={60} src={Client3} alt={''}/>
@@ -286,7 +554,7 @@ export default function AboutPage(){
                         <Image height={60} src={U5} alt={''}/>
                         <Image height={60} src={U6} alt={''}/>
                         <Image height={60} src={U7} alt={''}/>
-                        <Image height={60} src={U8} alt={''}/>
+                        {/*<Image height={60} src={U8} alt={''}/>*/}
                         <Image height={60} src={U9} alt={''}/>
                         <Image height={60} src={U10} alt={''}/>
                         <Image height={60} src={U11} alt={''}/>
@@ -308,7 +576,7 @@ export default function AboutPage(){
                         <Image height={60} src={W2} alt={''}/>
                         <Image height={60} src={W3} alt={''}/>
                         <Image height={60} src={W4} alt={''}/>
-                        <Image height={60} src={W5} alt={''}/>
+                        {/*<Image height={60} src={W5} alt={''}/>*/}
                         <Image height={60} src={W6} alt={''}/>
                         <Image height={60} src={W7} alt={''}/>
                         <Image height={60} src={W8} alt={''}/>
@@ -330,194 +598,5 @@ export default function AboutPage(){
 
             </div>
 
-            <div className={' flex flex-col items-center w-1/2'}>
-                <Image src={Mikey} alt={''} height={600} className={'flex hover:scale-105'}/>
-                <div className={'bg-blue-50 px-4 py-6 rounded-xl my-8 '}>
-                    <h2 className={'flex items-center text-xl font-bold sm:text-sm'}><GiAchievement size={65}/>
-                        RECENT ACCOMPLISHMENTS</h2>
-                    <ul className={'list-disc pl-6 leading-relaxed odd:text-red-500 lg:text-base sm:text-xs'}>
-                        <li>Chief Guest Speaker at Dr. Lyn West-man (Consultant Microsoft, Malinda Gates Foundation and
-                            US
-                            Army)
-                            5 days event on TRAUMA at John C. Maxwell TILTI Islamabad.
-                        </li>
-                        <li>Chaired MYEP (Minority Youth Exposure Program) conference at Quid-e-Azam University as Chief
-                            Guest
-                            Motivational speaker
-                        </li>
-                        <li>5 Days CAPACITY BUILDING TRAINING OF EDUCATION STAFF organized by National Commission for
-                            Human
-                            Development - Ministry of Federal Education & Professional Training Pakistan
-                        </li>
-                        <li>Delegated a FIRST 5 days INTERNATIONAL CONFERENCE ON PSYCHODRAMA “Center for Trauma Research
-                            &
-                            Psychosocial Interventions” facilitated by Aberdeen University of Australia, Chaired by
-                            David
-                            Alexandar.
-                        </li>
-                        <li>Delegated and represented Commonwealth Youth Program of two days “international conference
-                            on
-                            Psycho
-                            trauma” on Earthquake 2005 and Suicide attacks in Pakistan held in Jinnah Convention Center
-                            Islamabad.
-                        </li>
-                        <li>Organized by National University of Science & Technology Pakistan (NUST) sponsored by
-                            Motivational Seminar on LIFE & SUCCESS at THE FAZALEHAQ COLLEGE MARDAN KPK, Khyber
-                            Pakhtunkhwa,
-                            Pakistan.
-                        </li>
-                        <li>Inaugurated Pakistan Management Excellence Award (PMEA) at Pakistan Management Institute,
-                            Pakistan, Lahore Chapter.
-                        </li>
-                        <li>Guest Speaker at FM PLANET 87.6. 22 Reasons why educated people are broke and SUCCESS
-                            MINDSET
-                        </li>
-                        <li>Worked in joint venture with world class training organizations from USA, AUS, CHINA, UK,
-                            OMAN.
-                        </li>
-                        <li>Inaugurated PMEA. I spoke to 360 CEOs on perspective 01- excellence and international best
-                            practices.
-                        </li>
-                        <li>RESET OF SUCCESS MINDSET WORKSHOP” Guest of Honor and Guest Speaker at NAMAL UNIVERSITY,
-                            MIANWALI, PAKISTAN.
-                        </li>
-                        <li>Inspired 100 DATICS AI leaders for PRODUCTIVITY: DEVELOPING WORK ETHICS IN DIGITAL
-                            ENVIRONMENT
-                            at LHR, Pakistan.
-                        </li>
-                        <li>Inspired millions of souls including young kids, Teens, Adults at Guangdong Province,
-                            SHENZHEN
-                            UNIVERSITY - CHINA, HONGKONG, QATAR, FUTIAN, and WIDOWS OF THE WORLD STEVE JOBS OUTLET in
-                            China.
-                        </li>
-                        <li>One Week Training Workshop at AWKUM- Abdul Wali Khan University Mardan, Khyber Pakhtunkhwa
-                            KPK,
-                            Pakistan.
-                        </li>
-                        <li>100s of multi-level schools in the territory of Khyber Pakhtunkhwa (KPK) have been trained
-                            in
-                            Standard American Accent Elimination, Natural English Speaking, Motivation, Life Skills, and
-                            Success.
-                        </li>
-                        <li>Adjudicated the BUSINESS IDEA COMPETITION 2010 as jury in Fast Business Club Lahore,
-                            conducted
-                            at National University of Management and Emerging Sciences Lahore, Pakistan.
-                        </li>
-                        <li>Mega Business Conference SEASON 12 “BEST GOOSE-BUMPING & MOTIVATIONAL SPEAKER IN AISA AWARD
-                            2021” Islamabad Pakistan.
-                        </li>
-                        <li>Guest & keynote Speaker at ARFAKAREEM Tower on WORK ETHICS, Trained 100 IT Managers.</li>
-                        <li>Guest Speaker at University of Management and Technology, LHR Pakistan for Motivational
-                            Talk.
-                        </li>
-                        <li>Trained 100 Ufone Trainers for Standard American Accent Dialect/Non-Regional Accent,</li>
-                        <li>Illuminated 10 million professionals and general masses through BREAKTHROUGH Broadcasts on
-                            social media FB Live with Dr. Channie Messenger USA, Veronica RozenFeld US
-                        </li>
-                        <li>Women in Leadership: Developing Entrepreneurial Mindset University of Lahore, Pakistan
-                            Institute
-                            of Fashion and Design Lahore, Virtual University of Pakistan” KARO MUMKIN” in collaboration
-                            of
-                            British Council of Pakistan.
-                        </li>
-                        <li>Key Note Speaker at 7 days Thrive Conference “INCREASED CAPACITY” at Heritage Global
-                            Leadership
-                            & Mentor Institute (HGMI) Nigeria and Africa.
-                        </li>
-                        <li>World Mental Health Day: Brand Ambassador and Guest Speaker Indonesia</li>
-                        <li>LIVE YOUR LIFE TO YOUR FULLEST POTENTIAL, Government Technology College BRW, Pakistan</li>
-                        <li>Guest speaker and brand ambassador at NAMAL UNIVERSTY “SUCCESS MINDSET”</li>
-                        <li>DISCOVER PAKISTAN HD TV: “THRIVE ON LIFE PODCAST” 47M Viewers, 10M Subscribers</li>
-                        <li>THE POWER OF BUSINESS MINDSET SEMINAR WITH– Government College of Commerce, Pakistan</li>
-                        <li>Power of Winning Business Mindset at SUBTLE COMMERCE - AMAZON EXPRTS.</li>
-                        <li>NIBAF event on DEVELOPING WORK ETHICS at State Bank of Pakistan (SBP) Islamabad, Pakistan.
-                        </li>
-                        <li>“Business Conference” by Raymond Banzuela Business Consultancy Services Philippine, 2024.
-                        </li>
-                        <li>Entrepreneurship Accelerator Program: Team Building and Leadership by Bliss Education
-                            Indonesia.
-                        </li>
-                        <li>WIND OF CHANGE” by CHILPARCO INTERNATIONAL. Podcast with Dr. Alka Mahajan Indonesia</li>
-                        <li>Guest Speaker and Trainer, MIND YOUR OWN BUSINESS: MASTERING ENTREPRENEURSHIP IN DIGITAL
-                            ENVIRONMENT CHAPTER#1 at IIU Internship International University LEBNON.
-                        </li>
-                        <li>Speaker at International education summit “EDUTALK” Azerbaijan with IIU International
-                            Internship
-                            University.
-                        </li>
-                        <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #1 BE THE SUPERWOMEN at IIU
-                            International Internship University-WEC, Romania.
-                        </li>
-                        <li>Distinguished guest speaker at the INERNATIONAL DAY OF EDUCATION CONFERENCE with Heartfelt
-                            Teachers Network Global Zimbabwe.
-                        </li>
-                        <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #2 SUCCESS MINDSET OF WOMEN at
-                            IIU
-                            International Internship University-WEC, Romania.
-                        </li>
-                        <li>Advanced Teacher Training Diploma Programs CHORT II” 2 days training on EDUCATION PSYCHGOLOY
-                            IN
-                            WORLD PERSPECTIVE” with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia,
-                            LIBERIA.
-                        </li>
-                        <li>Guest Keynote Speaker at International Association of Global Education Georgia in
-                            INTERNATIONAL
-                            EDCUCATION SUMMIT.
-                        </li>
-                        <li>Guest Speaker at ELITE GLOBLA LEADERSHIP CLUB “Unleash your leadership Genius” with Host
-                            Veronica Ceban, Netherland.
-                        </li>
-                        <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #3 HOW TO TAKE CRITICISM LIKE A
-                            CHAMPION at IIU International Internship University-WEC, Romania.
-                        </li>
-                        <li>Guest Speaker for TALK SHOW on HOW TO RAISE SELF-ESTEEM IN WOMEN at INTERNATIONAL INTERNSHIP
-                            UNIVERSITY WEC- LEBNON.
-                        </li>
-                        <li>WORLD’S PHENOMENAL ROCKSTAR AND TRANSFORMATIONAL LEADERSHIP AWARD 2024 awarded by Great Idea
-                            Events Management Services, RB Business Consultancy Services Philippine Chen Kuang School
-                            Philippine, BPMI Leadership and Life Coaching Institute Texas USA, and World Class Academy
-                            of
-                            Excellence Florida USA declared Mike Litman
-                        </li>
-                        <li>MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS “Guest Speaker” organized
-                            by
-                            YES YOU CAN INTERNATIONAL (YYCI) UK & ZIM
-                        </li>
-                        <li>BUSINESS LEADERSHIP STYLES “Guest Speaker” organized by YES YOU CAN INTERNATIONAL (YYCI) UK
-                            &
-                            ZIM
-                        </li>
-                        <li>ADVANCED CAREER DEVELOPMENT PROGRAM CHORT III” 2 days training on Advanced Communication
-                            Skills”
-                            with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia, LIBERIA.
-                        </li>
-                        <li>2 DAYS - MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS. Take-Away: Take
-                            Full Responsibility of Your Own Life “150 BUSINESS IDEAS WITH ZERO TO MINIMUM RESOURCE with
-                            Yes
-                            YOU can International UK & ZIMBABWE
-                        </li>
-                        <li>International Conference on &quot;WOMEN EMPOWERMENT&quot; Orchestrated by General Education Network
-                            (GEN-VEIU).
-                        </li>
-                        <li>MAINTAINING POSITIVE MINDSET” Guest of Honor and Guest Speaker at the SMART SCHOOL GAGOO.
-                        </li>
-                        <li>“INNOVATION IN TEACHING” Chief Guest speaker at Global Education Network USA orchestrated by
-                            DR.
-                            H.E. RITA AGUILAR USA.
-                        </li>
-                        <li>TRANSFORMATIONAL LEADERSHIP & MINDSET FOR TRANSFORMING RELATIONSHIP CONFERENCE” Chairperson,
-                            President, Speaker and Moderator organized by YES YOU CAN INTERNATIONAL (YYCI) UK.
-                        </li>
-                        <li>Guest speaker & trainer on EDUCATION PSYCHOLOGY with TAKEAWAY of ADVANCED LEARNING &
-                            TEACHING
-                            METHODOLOGIES in world perspective of world case studies with KEY CONSULTING and Q
-                            CONSULTING
-                            Georgia
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
     )
 }

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import MyHeaderComponent from "@/app/compo/myheader";
 import FooterComponent from "@/app/compo/footer";
+import Template from "@/app/template";
 
-const inter = Inter({ subsets: ["latin"] });
-
+// const inter = Inter({ subsets: ["latin"] });
+const ubuntu = Ubuntu({
+    weight: ['500'],
+    subsets: ['latin'],
+})
 export const metadata: Metadata = {
   title: "Mike Litman : Global Thought Leader",
   description: "Global Thought Leader",
@@ -18,11 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-     <MyHeaderComponent/>
-      {children}
-     <FooterComponent/>
-      </body>
+
+    <body className={ubuntu.className}>
+    <MyHeaderComponent/>
+    <Template>
+        {children}
+    </Template>
+    <FooterComponent/>
+    </body>
 
     </html>
   );

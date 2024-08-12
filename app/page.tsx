@@ -8,6 +8,7 @@ import ExpertiseComponent from "@/app/compo/expertise";
 import TestimonialsComponent from "@/app/compo/testemonials";
 import ImpactsComponent from "@/app/compo/impacts";
 import VisionComponent from "@/app/compo/vision";
+import TestimonialsYT from "@/app/compo/testimonialsYT";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ExpertiseComponent />
         <ImpactsComponent/>
         <TestimonialsComponent />
+        <TestimonialsYT/>
         <CommunityComponent/>
     </main>
   );
