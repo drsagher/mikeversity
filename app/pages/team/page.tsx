@@ -1,19 +1,21 @@
-import DrElizabethLucas from '@/public/team/DrElizabethLucas.jpeg';
-import CalebTimilehinSamuel from '@/public/team/CalebTimilehinSamuel.jpeg';
-import DrLaKishaJames from '@/public/team/DrLaKishaJames.jpeg';
-import DrMadhviBorse from '@/public/team/DrMadhviBorse.jpeg';
-import DrRosalindWillis from '@/public/team/DrRosalindWillis.jpeg';
-import DrShawnSaxton from '@/public/team/DrShawnSaxton.jpeg';
-import HerdianaDewiNurfika from '@/public/team/HerdianaDewiNurfika.jpeg';
-import LikaOkhanashvili from '@/public/team/LikaOkhanashvili.jpeg';
-import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
-import ChanieMessinger  from '@/public/team/ChanieMessinger.jpg';
-import SHAHIDIQBAL  from '@/public/team/SHAHIDIQBAL.jpeg';
-import DrAmb  from '@/public/team/DrAmb.jpg';
-import DRANITA  from '@/public/team/DRANITA.jpg';
-import IlonaParunakova  from '@/public/team/IlonaParunakova.jpg';
-import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
-import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
+import DrElizabethLucas from '/public/team/DrElizabethLucas.jpeg';
+import CalebTimilehinSamuel from '/public/team/CalebTimilehinSamuel.jpeg';
+import DrLaKishaJames from '/public/team/DrLaKishaJames.jpeg';
+import DrMadhviBorse from '/public/team/DrMadhviBorse.jpeg';
+import DrRosalindWillis from '/public/team/DrRosalindWillis.jpeg';
+import DrShawnSaxton from '/public/team/DrShawnSaxton.jpeg';
+import HerdianaDewiNurfika from '/public/team/HerdianaDewiNurfika.jpeg';
+import LikaOkhanashvili from '/public/team/LikaOkhanashvili.jpeg';
+import TeklaKiparoidze from '/public/team/TeklaKiparoidze.jpeg';
+import ChanieMessinger  from '/public/team/ChanieMessinger.jpg';
+import SHAHIDIQBAL  from '/public/team/SHAHIDIQBAL.jpeg';
+import DrAmb  from '/public/team/DrAmb.jpg';
+import DRANITA  from '/public/team/DRANITA.jpg';
+import IlonaParunakova  from '/public/team/IlonaParunakova.jpg';
+import DanelleBoyles  from '/public/team/DanelleBoyles.jpeg';
+import VeronicaRozenfeld  from '/public/team/VeronicaRozenfeld.jpeg';
+import LayalGhaddar  from '/public/team/LayalGhaddar.jpg';
+import MahaShhadeh  from '/public/team/MahaShhadeh.jpg';
 import Image from "next/image";
 
 export default function TeamPage(){
@@ -83,6 +85,14 @@ export default function TeamPage(){
         { id:16, name:"SHAHID IQBAL",
             description:"SHAHID IQBAL Top trainer in the areas of Anti Money Laundering and Combating the Financing of Terrorism",
             country:"Pakistan", pic:SHAHIDIQBAL
+        },
+        { id:17, name:"Layal Ghaddar",
+            description:"As a mentor, consultant, and project manager for educational conferences, my mission is to empower others through knowledge and drive positive change in education. I am a team leader and director for Layal Global Innovative Learning Hub",
+            country:"Pakistan", pic:LayalGhaddar
+        },
+        { id:18, name:"Maha Shhadeh",
+            description:"distinguished Training Consultant, Education Leader, Language Advocate, AI Expert, Author, and Trainer with over two decades of experience in the education sector. Her extensive expertise encompasses education management, instructional design, language proficiency, and artificial intelligence",
+            country:"Pakistan", pic:MahaShhadeh
         },
     ]
 
