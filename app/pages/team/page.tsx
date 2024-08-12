@@ -226,7 +226,7 @@ export default function TeamPage(){
                         and professional development, serving as President of IIU-ISDC and Ambassador for British Council, eTwinning, and Global School Alliance, driving transformative
                         change in education and global learning initiatives.
                     </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon</p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon </p>
                 </div>
 
             </div>
