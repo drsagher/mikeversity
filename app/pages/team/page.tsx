@@ -10,7 +10,7 @@ import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
 import ChanieMessinger  from '@/public/team/ChanieMessinger.jpg';
 import SHAHIDIQBAL  from '@/public/team/SHAHIDIQBAL.jpeg';
 import DrAmb  from '@/public/team/DrAmb.jpg';
-import DRANITA  from "@/public/team/DRANITA.jpg";
+import DRANITA  from '@/public/team/DRANITA.jpg';
 import IlonaParunakova  from '@/public/team/IlonaParunakova.jpg';
 import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
 import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
@@ -18,12 +18,12 @@ import Image from "next/image";
 
 export default function TeamPage(){
     let team = [
-        { id:1, name:"Prof. Dr. Queen Elizabeth Lucas Afolalu",
+        { id:1, name:"Prof. Dr. Queen Elizabeth Lucas-Afolalu",
             description:"Global Inspirational and Transformational Speaker and Certified Mentor and Trainer and Global Transformational Leaders and Advisor, Youth Mentor and Entrepreneur.",
             country:"United Kingdom", pic:DrElizabethLucas
         },
         { id:2, name:"Dr. Rosalind Willis",
-            description:"Highly esteemed Birthing Purpose Coach and an award winning international speaker and author. Dr. Rosalind is the USA Country Director for IIU. She is a sought after Global Transformational Speaker.",
+            description:"Highly esteemed Birthing Purpose Coach and an award-winning international speaker and author. Dr. Rosalind is the USA Country Director for IIU. She is a sought after Global Transformational Speaker.",
             country:"United States", pic:DrRosalindWillis
         },
         { id:3, name:"Dr. Chanie Messinger",
@@ -35,7 +35,7 @@ export default function TeamPage(){
             country:"United States", pic:LikaOkhanashvili
         },
         { id:5, name:"Tekla Kiparoidze",
-            description:"Tekla has participated in Erasmus and ISCR projects, gaining valuable insights and skills. She has a passion for leadership and has worked alongside young leaders, further honing her abilities",
+            description:"Tekla has participated in Erasmus+ and ISCR projects, gaining valuable insights and skills. She has a passion for leadership and has worked alongside young leaders, further honing her abilities",
             country:"United States", pic:TeklaKiparoidze
         },
 
@@ -44,19 +44,19 @@ export default function TeamPage(){
             country:"United States", pic:DrLaKishaJames
         },
         { id:7, name:"Dr. Madhvi Borse",
-            description:"Educationist, Author and International speaker Honoured with various National and International Awards, Records, Medal and Doctorates in the field of Education",
+            description:"Educationist, Author & International speaker Honoured with various National & International Awards, Records, Medal and Doctorates in the field of Education",
             country:"India", pic:DrMadhviBorse
         },
         { id:8, name:"Dr. Shawn Saxton ",
-            description:"Certified Human Rights Consultant, a certified Transitional life coach, and a four time bestselling author",
+            description:"Certified Human Rights Consultant, a certified Transitional life coach, and a four-time bestselling author",
             country:"United States", pic:DrShawnSaxton
         },
         { id:9, name:"Herdiana Dewi Nurfika",
-            description:"Founder and CEO of Bliss Education Center, Brancy Firm and HDN STUFF. Certified Entrepreneurship and Business Coach, ACT and REBT Therapist, Certified NLP Master Practitioner, TESOL Certified ",
+            description:"Founder & CEO of Bliss Education Center, Brancy Firm and HDN STUFF. Certified Entrepreneurship & Business Coach, ACT & REBT Therapist, Certified NLP Master Practitioner, TESOL Certified ",
             country:"Indonesia", pic:HerdianaDewiNurfika
         },
         { id:10, name:"Caleb Timilehin Samuel",
-            description:"Award winning International Trainer and Speaker who has been invited to speak and train over 1000 emerging young leaders and leaders in leadership principles ",
+            description:"Award-winning International Trainer and Speaker who has been invited to speak and train over 1000 emerging young leaders and leaders in leadership principles ",
             country:"Nigeria", pic:CalebTimilehinSamuel
         },
         { id:11, name:"Dr. Amb Omotola Sobowale Lagos",
@@ -89,7 +89,7 @@ export default function TeamPage(){
 
     return (
         <div className={'container mx-auto flex flex-col items-center justify-center py-6'}>
-            <p className={'text-lg md:text-3xl font-bold text-center py-2 lg:py-10 uppercase'}>Our Team Profile</p>
+            <p className={'text-lg md:text-3xl font-bold text-center py-2 lg:py-10 uppercase'}>Our Team</p>
             <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 px-6 '}>
                 {team.map((link) => {
                     return (
