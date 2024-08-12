@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "mikeversity",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "react": "^18",
+    "framer-motion": "^11.3.24",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "next": "14.2.5",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "typescript": "^5",
