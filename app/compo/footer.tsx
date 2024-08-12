@@ -98,7 +98,11 @@ export default function FooterComponent(){
                             <FaWhatsapp size={50}/>
                         </Link>
                     </div>
-                    <p className={'text-white'}>&copy;2024 Mikeversity</p>
+                    <div>
+                        <p className={'text-white'}>&copy;2024 Mikeversity </p>
+                        <p className={'text-xs text-gray-400'}>Developed by <Link target={'_blank'} className={'text-amber-300'} href={'https://www.linkedin.com/in/drsagher/'}>Abubakar Siddique</Link>, Senior Full Stack Developer</p>
+                    </div>
+
                 </div>
 
             </div>
