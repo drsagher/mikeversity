@@ -214,7 +214,7 @@ export default function TeamPage(){
                         consulting, and project management, I fuel transformative learning experiences, champion equitable access to quality education, and inspire a better future for all as a
                         published author, influential speaker, and director of Layal Global Innovative Learning Hub
                     </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon</p>
                 </div>
                 {/* */}
                 <div
@@ -226,7 +226,7 @@ export default function TeamPage(){
                         and professional development, serving as President of IIU-ISDC and Ambassador for British Council, eTwinning, and Global School Alliance, driving transformative
                         change in education and global learning initiatives.
                     </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon</p>
                 </div>
 
             </div>
