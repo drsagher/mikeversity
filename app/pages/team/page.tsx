@@ -22,6 +22,7 @@ import DrAntoinette from '@/public/team/DrAntoinette.jpg';
 import SonalJhajj from '@/public/team/SonalJhajj.jpg';
 import Agata from '@/public/team/Agata.jpg';
 import SusanMahgouub from '@/public/team/SusanMahgouub.jpg';
+import DrSupriyaKumaravelan from '@/public/team/DrSupriyaKumaravelan.jpg';
 
 import Image from "next/image";
 
@@ -307,7 +308,16 @@ export default function TeamPage(){
                     </p>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Egypt</p>
                 </div>
-
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={DrSupriyaKumaravelan} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Dr. Supriya Kumaravelan </h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        International Speaker, NLP Practitioner , Communication & Leadership  Coach, Softskill Trainer ,Global Motivational / Keynote speaker ,KUDOS CCO & LATTE Show Host.
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>India</p>
+                </div>
             </div>
         </div>
     )
