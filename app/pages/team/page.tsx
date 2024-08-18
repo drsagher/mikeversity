@@ -16,6 +16,13 @@ import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
 import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
 import LayalGhaddar  from '@/public/team/LayalGhaddar.png';
 import MahaShhadeh  from '@/public/team/MahaShhadeh.png';
+import DrHCK  from '@/public/team/DrHCK.jpg';
+import MJTolan from '@/public/team/MJTolan.jpg';
+import DrAntoinette from '@/public/team/DrAntoinette.jpg';
+import SonalJhajj from '@/public/team/SonalJhajj.jpg';
+import Agata from '@/public/team/Agata.jpg';
+import SusanMahgouub from '@/public/team/SusanMahgouub.jpg';
+
 import Image from "next/image";
 
 export default function TeamPage(){
@@ -227,6 +234,78 @@ export default function TeamPage(){
                         change in education and global learning initiatives.
                     </p>
                     <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon </p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={DrHCK} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Dr. (h.c.) Khomotšo Malete-Mashalane</h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        delegate for the Global Chamber of Business Leaders (GCBL) in South Africa, she plays a pivotal role in advancing gender equality on an international scale.
+                        With a Master’s degree from Edinburgh Business School, she has garnered worldwide recognition as a speaker, thought leader, and author
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>South Africa </p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={MJTolan} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Coach MJ Tolan</h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        Leadership Facilitator , Author, TEDx Speaker, Co- Founder of Children&apos;s Charity  Time4sharing.org
+                        Chief Empowerment Officer @ Firepowertalent.com
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States </p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={DrAntoinette} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Dr. Antoinette Carole Grace Mbarga
+                    </h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        Dr. Antoinette Carole Grace Mbarga is an awards winning Certified Global Trainer, Human Rights Advocate, and community activist with a heartfelt visible commitment to serve the world at local and global level.
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States </p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={SonalJhajj} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Mrs. Sonal Jhajj
+                    </h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        Founder and Creative Director,
+                        Metamorphosis,
+                        Award Winning Editor/ Global Educationist,
+                        Ecce Impactor/ Academic Consultant/ Literary Expert
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>India</p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={Agata} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Agata Smolarek </h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        Attorney at Law, Humanitarian, CEO of Global Business & Law LTD
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>London</p>
+                </div>
+                {/* */}
+                <div
+                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
+                    <Image src={SusanMahgouub} alt={''} className={'h-96 w-full'}/>
+                    <h2 className={'font-bold text-lg text-white'}>Susan Mahgouub
+                    </h2>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
+                        M.Ed , Liverpool John moorse university,
+                        CELTA certified teacher, Cambridge University,
+                        A certified teacher trainer, Ain Shams university.
+                        Instructor of English language and literature
+                        Educational Conference organizer
+                    </p>
+                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Egypt</p>
                 </div>
 
             </div>
