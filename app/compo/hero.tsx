@@ -4,7 +4,6 @@ export default function HeroComponent(){
     return (
         <div className="flex clear-both">
             <Image src={Bgd} alt={''} className={''}/>
-
             {/*<div className={'sm:hidden flex flex-col items-start p-1 ml-2 mt-6 absolute border-2 border-gray-100 hover:border-red-600 w-[40%] sm:left-2 sm:top-8 lg:top-[30%] sm:p-1 lg:p-8 lg:rounded-xl hover:bg-indigo-900 hover:text-gray-300 hover:skew-x-2'}>*/}
             {/*    <p className="text-xs font-bold">Mike Litman</p>*/}
             {/*    /!*<p className="font-bold ">Global Thought Leader</p>*!/*/}
