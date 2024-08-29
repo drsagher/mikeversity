@@ -17,6 +17,7 @@ export default function MyHeaderComponent(){
         {id: 4, name: 'Gallery', link:'/pages/gallery'},
         {id: 5, name: 'About', link:'/pages/about'},
         {id: 6, name: 'Events', link:'/pages/events'},
+        {id: 7, name: 'Biography', link:'/pages/biography'},
     ]
     const [menuOpen, setMenuOpen] = useState(false);
     const handlerNav =()=>{
