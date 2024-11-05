@@ -15,7 +15,7 @@ export default function Home() {
     <main >
         <MissionComponent/>
         <VisionComponent/>
-        <HeroComponent />
+        {/*<HeroComponent />*/}
         <TopCoursesComponent/>
         <TrainingDomainsComponent/>
         <SoftSkillsComponent/>

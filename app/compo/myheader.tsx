@@ -12,12 +12,12 @@ export default function MyHeaderComponent(){
     const list = [
         {id: 1, name: 'Home', link:'/'},
         {id: 2, name: 'Services', link:'/pages/services'},
-        {id: 2, name: 'Team', link:'/pages/team'},
-        {id: 3, name: 'Awards', link:'/pages/awards'},
-        {id: 4, name: 'Gallery', link:'/pages/gallery'},
-        {id: 5, name: 'About', link:'/pages/about'},
-        {id: 6, name: 'Events', link:'/pages/events'},
-        {id: 7, name: 'Biography', link:'/pages/biography'},
+        {id: 3, name: 'Team', link:'/pages/team'},
+        {id: 4, name: 'Awards', link:'/pages/awards'},
+        {id: 5, name: 'Gallery', link:'/pages/gallery'},
+        {id: 6, name: 'About', link:'/pages/about'},
+        {id: 7, name: 'Events', link:'/pages/events'},
+        {id: 8, name: 'Biography', link:'/pages/biography'},
     ]
     const [menuOpen, setMenuOpen] = useState(false);
     const handlerNav =()=>{
