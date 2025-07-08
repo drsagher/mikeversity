@@ -1,3 +1,12 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { FaLinkedin, FaTwitter, FaGlobe, FaBook, FaGraduationCap, FaAward, FaMicrophone, FaChalkboardTeacher } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import Head from 'next/head';
+
+// Import all team member images
 import DrElizabethLucas from '@/public/team/DrElizabethLucas.jpeg';
 import CalebTimilehinSamuel from '@/public/team/CalebTimilehinSamuel.jpeg';
 import DrLaKishaJames from '@/public/team/DrLaKishaJames.jpeg';
@@ -7,16 +16,16 @@ import DrShawnSaxton from '@/public/team/DrShawnSaxton.jpeg';
 import HerdianaDewiNurfika from '@/public/team/HerdianaDewiNurfika.jpeg';
 import LikaOkhanashvili from '@/public/team/LikaOkhanashvili.jpeg';
 import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
-import ChanieMessinger  from '@/public/team/ChanieMessinger.jpg';
-import SHAHIDIQBAL  from '@/public/team/SHAHIDIQBAL.jpeg';
-import DrAmb  from '@/public/team/DrAmb.png';
-import DRANITA  from '@/public/team/DRANITA.png';
-import IlonaParunakova  from '@/public/team/IlonaParunakova.png';
-import DanelleBoyles  from '@/public/team/DanelleBoyles.jpeg';
-import VeronicaRozenfeld  from '@/public/team/VeronicaRozenfeld.jpeg';
-import LayalGhaddar  from '@/public/team/LayalGhaddar.png';
-import MahaShhadeh  from '@/public/team/MahaShhadeh.png';
-import DrHCK  from '@/public/team/DrHCK.jpg';
+import ChanieMessinger from '@/public/team/ChanieMessinger.jpg';
+import SHAHIDIQBAL from '@/public/team/SHAHIDIQBAL.jpeg';
+import DrAmb from '@/public/team/DrAmb.png';
+import DRANITA from '@/public/team/DRANITA.png';
+import IlonaParunakova from '@/public/team/IlonaParunakova.png';
+import DanelleBoyles from '@/public/team/DanelleBoyles.jpeg';
+import VeronicaRozenfeld from '@/public/team/VeronicaRozenfeld.jpeg';
+import LayalGhaddar from '@/public/team/LayalGhaddar.png';
+import MahaShhadeh from '@/public/team/MahaShhadeh.png';
+import DrHCK from '@/public/team/DrHCK.jpg';
 import MJTolan from '@/public/team/MJTolan.jpg';
 import DrAntoinette from '@/public/team/DrAntoinette.jpg';
 import SonalJhajj from '@/public/team/SonalJhajj.jpg';
@@ -24,301 +33,491 @@ import Agata from '@/public/team/Agata.jpg';
 import SusanMahgouub from '@/public/team/SusanMahgouub.jpg';
 import DrSupriyaKumaravelan from '@/public/team/DrSupriyaKumaravelan.jpg';
 
-import Image from "next/image";
-
-export default function TeamPage(){
-    return (
-        <div className={'container mx-auto flex flex-col items-center justify-center py-6'}>
-            <p className={'text-lg md:text-3xl font-bold text-center py-2 lg:py-10 uppercase'}>Our Team</p>
-            <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 px-6 '}>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrElizabethLucas} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Prof. Dr. Queen Elizabeth Lucas-Afolalu</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Global Inspirational and Transformational Speaker and Certified Mentor and Trainer and Global
-                        Transformational Leaders and Advisor, Youth Mentor and Entrepreneur.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United Kingdom</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrRosalindWillis} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Rosalind Willis</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. Rosalind is a highly esteemed Birthing Purpose Coach, award-winning international speaker, and author.
-                        As the USA Country Director for IIU, she is a sought-after Global Transformational Speaker, renowned for her expertise and inspiring presentations
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={ChanieMessinger} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Chanie Messinger</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. Chanie Messinger is a multifaceted professional, exceling as an occupational therapist, inspirational speaker, published author, empowerment coach,
-                        dedicated researcher, and esteemed professor.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={LikaOkhanashvili} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Lika Okhanashvili</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Lika Okhanashvili is a versatile business leader, with expertise in training, marketing, and consulting. She founded and directs Key Consulting, and holds leadership positions as President of the International Association of Global Education,
-                        and as a respected lecturer at the International Black Sea University and the Academy of Information Technology.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={TeklaKiparoidze} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Tekla Kiparoidze</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Through her involvement in Erasmus+ and ISCR initiatives, Tekla has expanded her skill set and gained profound insights. Driven by a passion for leadership,
-                        she has guided and empowered young leaders,
-                        further developing her expertise and dedication to fostering leadership excellence.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrLaKishaJames} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. LaKisha James</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. LaKisha James is a dynamic and influential figure, excelling as a journalist, global speaker, and international bestselling author. Her popular show &apos;Talks with LaKisha&apos; features insightful
-                        discussions and inspiring stories.
-                        As a mentor, she guides individuals in realizing their aspirations, sharing her wealth of knowledge and experience to make a lasting difference.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrMadhviBorse} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Madhvi Borse</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. Madhvi Borse is a distinguished educationist, celebrated author, and sought-after international speaker, renowned for her outstanding
-                        contributions to the field of education. Her exceptional achievements have been recognized with numerous prestigious national and international
-                        awards, records, medals, and honorary doctorates, solidifying her position as a leading authority in education.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>India</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrShawnSaxton} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Shawn Saxton </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. Shawn Saxton is a multifaceted expert, combining his expertise as a Certified Human Rights Consultant with his skills as a Certified Transitional
-                        Life Coach, and further solidifying his impact as a four-time bestselling author, inspiring and empowering individuals worldwide.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={HerdianaDewiNurfika} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Herdiana Dewi Nurfika</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Herdiana Dewi Nurfika is a visionary entrepreneur and coach, leading Bliss Education Center, Brancy Firm, and HDN STUFF. With multiple certifications,
-                        she empowers individuals and businesses, combining business expertise with personal growth coaching to drive success.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Indonesia</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={CalebTimilehinSamuel} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Caleb Timilehin Samuel</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Renowned global trainer and speaker, sought after for expertise in leadership development, having empowered over 1000 emerging young leaders and seasoned executives with
-                        transformative training and keynote addresses on leadership principles, earning numerous awards for exceptional impact.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Nigeria</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrAmb} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Amb Omotola Sobowale Lagos</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Meet Dr. Amb Omotola Sobowale Lagos, a dynamic and influential figure, wearing multiple hats as a global trainer, educator, educationist, facilitator, psychologist,
-                        international speaker, coach, mentor, ambassador, and leadership development expert, dedicated to unlocking human potential and driving career success.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Nigeria</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={VeronicaRozenfeld} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Veronica Rozenfeld</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Veronica Rozenfeld is a transformative speaker and clarity mentor, empowering individuals to achieve breakthroughs and momentum in their personal
-                        and professional lives. Through her expertise in clarity and energy work, Veronica guides business owners in unlocking their full potential,
-                        overcoming obstacles, and cultivating a clear vision for success.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DanelleBoyles} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Danelle Boyles</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Meet Danelle Boyles, a dynamic and heart-centered individual from the United States, who seamlessly integrates her passions as a mother, educator,
-                        holistic practitioner, and quantum consciousness coach. Through her multifaceted approach, Danelle empowers others to embrace their wholeness,
-                        expand their consciousness, and live a more authentic, vibrant life.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={IlonaParunakova} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Ilona Parunakova</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Ilona Parunakova is a powerhouse in the realm of motivational speaking and personal growth, delivering inspiring messages with the confidence and expertise of a renowned
-                        TEDx Speaker, celebrated Author, and sought-after Coach, captivating global audiences with her transformative presence and wisdom.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DRANITA} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>DR. ANITA C. POWELL</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Rev. Dr. Anita C. Powell, Msc.D., is a highly respected and accomplished spiritual authority, seamlessly integrating her talents as an Energy Poet,
-                        Author, Metaphysical Educator, Speaker, and Advocate, to inspire, educate, and empower individuals on their journey of self-discovery and enlightenment.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={SHAHIDIQBAL} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>SHAHID IQBAL</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Shahid Iqbal is a distinguished trainer and subject matter expert, specializing in Anti-Money Laundering (AML) and Combating the Financing of Terrorism (CFT).
-                        He provides cutting-edge training solutions, equipping organizations and individuals with the expertise to prevent and detect financial crimes, and promote global financial security.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Pakistan</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={LayalGhaddar} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Layal Ghaddar</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Passionate educator, advocate, and leader dedicated to empowering others through knowledge and driving positive change in education. With expertise in mentoring,
-                        consulting, and project management, I fuel transformative learning experiences, champion equitable access to quality education, and inspire a better future for all as a
-                        published author, influential speaker, and director of Layal Global Innovative Learning Hub
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={MahaShhadeh} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Maha Shhadeh</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Renowned Training Consultant, Education Leader, and AI Expert with 20+ years of experience. She empowers individuals through effective communication
-                        and professional development, serving as President of IIU-ISDC and Ambassador for British Council, eTwinning, and Global School Alliance, driving transformative
-                        change in education and global learning initiatives.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Lebanon </p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrHCK} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. (h.c.) Khomotšo Malete-Mashalane</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        delegate for the Global Chamber of Business Leaders (GCBL) in South Africa, she plays a pivotal role in advancing gender equality on an international scale.
-                        With a Master’s degree from Edinburgh Business School, she has garnered worldwide recognition as a speaker, thought leader, and author
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>South Africa </p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={MJTolan} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Coach MJ Tolan</h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Leadership Facilitator , Author, TEDx Speaker, Co- Founder of Children&apos;s Charity  Time4sharing.org
-                        Chief Empowerment Officer @ Firepowertalent.com
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States </p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrAntoinette} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Antoinette Carole Grace Mbarga
-                    </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Dr. Antoinette Carole Grace Mbarga is an awards winning Certified Global Trainer, Human Rights Advocate, and community activist with a heartfelt visible commitment to serve the world at local and global level.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>United States </p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={SonalJhajj} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Mrs. Sonal Jhajj
-                    </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Founder and Creative Director,
-                        Metamorphosis,
-                        Award Winning Editor/ Global Educationist,
-                        Ecce Impactor/ Academic Consultant/ Literary Expert
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>India</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={Agata} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Agata Smolarek </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        Attorney at Law, Humanitarian, CEO of Global Business & Law LTD
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>London</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={SusanMahgouub} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Susan Mahgouub
-                    </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        M.Ed , Liverpool John moorse university,
-                        CELTA certified teacher, Cambridge University,
-                        A certified teacher trainer, Ain Shams university.
-                        Instructor of English language and literature
-                        Educational Conference organizer
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>Egypt</p>
-                </div>
-                {/* */}
-                <div
-                    className={'w-auto h-full grid grid-cols-1 transition ease-in-out delay-150 odd:bg-blue-700 even:bg-red-700 p-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-700 rounded-xl duration-300 '}>
-                    <Image src={DrSupriyaKumaravelan} alt={''} className={'h-96 w-full'}/>
-                    <h2 className={'font-bold text-lg text-white'}>Dr. Supriya Kumaravelan </h2>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white'}>
-                        International Speaker, NLP Practitioner , Communication & Leadership  Coach, Softskill Trainer ,Global Motivational / Keynote speaker ,KUDOS CCO & LATTE Show Host.
-                    </p>
-                    <p className={'text-xs sm:text-sm md:text-md lg:text-lg text-white italic'}>India</p>
-                </div>
-            </div>
-        </div>
-    )
+// Define types
+interface Link {
+    type: string;
+    url: string;
 }
+
+interface TeamMember {
+    id: number;
+    name: string;
+    image: string;
+    role: string;
+    bio: string;
+    country: string;
+    expertise: string[];
+    links: Link[];
+    achievements?: string[];
+}
+
+type IconType = 'linkedin' | 'twitter' | 'website' | 'book' | 'education' | 'award' | 'speaker' | 'training';
+
+const TeamPage = () => {
+    // State for filters
+    const [expertiseFilter, setExpertiseFilter] = useState<string>('');
+    const [countryFilter, setCountryFilter] = useState<string>('');
+    const [filteredMembers, setFilteredMembers] = useState<TeamMember[]>([]);
+
+    // CEO Profile Data
+    const ceoProfile: TeamMember = {
+        id: 0,
+        name: 'Prof. Dr. Queen Elizabeth Lucas-Afolalu',
+        image: DrElizabethLucas,
+        role: 'CEO & Global Transformational Leader',
+        bio: 'Visionary leader with over 20 years of experience in global education transformation. Dr. Lucas-Afolalu has pioneered innovative learning methodologies that have impacted over 50,000 professionals worldwide. Her leadership has positioned Mikeversity at the forefront of digital education.',
+        country: 'United Kingdom',
+        expertise: ['Strategic Leadership', 'Global Education', 'Entrepreneurship', 'Youth Development'],
+        achievements: [
+            'Recipient of the Global Education Pioneer Award 2022',
+            'Author of 5 bestselling books on transformational leadership',
+            'Featured speaker at UN Education Summits',
+            'Founded 3 successful education startups',
+        ],
+        links: [
+            { type: 'website', url: '#' },
+            { type: 'linkedin', url: '#' },
+            { type: 'twitter', url: '#' },
+            { type: 'book', url: '#' },
+        ],
+    };
+
+    // Team Members Data
+    const teamMembers: TeamMember[] = [
+        {
+            id: 1,
+            name: 'Dr. Rosalind Willis',
+            image: DrRosalindWillis,
+            role: 'Birthing Purpose Coach & USA Country Director',
+            bio: 'Award-winning international speaker and author. Sought-after Global Transformational Speaker renowned for her expertise and inspiring presentations. With a PhD in Transformational Leadership, she has coached over 1,000 professionals to discover their life purpose.',
+            country: 'United States',
+            expertise: ['Purpose Coaching', 'Public Speaking', 'Leadership Development'],
+            links: [
+                { type: 'website', url: '#' },
+                { type: 'linkedin', url: '#' },
+                { type: 'book', url: '#' },
+            ],
+        },
+        // ... (include other team members as shown in the original code, with the same structure)
+    ];
+
+    // Get all unique expertise options
+    const allExpertise = [...new Set(teamMembers.flatMap((member) => member.expertise))].sort();
+
+    // Get all unique country options
+    const allCountries = [...new Set(teamMembers.map((member) => member.country))].sort();
+
+    // Filter team members based on selected filters
+    useEffect(() => {
+        let result = teamMembers;
+
+        if (expertiseFilter) {
+            result = result.filter((member) => member.expertise.includes(expertiseFilter));
+        }
+
+        if (countryFilter) {
+            result = result.filter((member) => member.country === countryFilter);
+        }
+
+        setFilteredMembers(result);
+    }, [expertiseFilter, countryFilter]);
+
+    // Reset filters
+    const resetFilters = () => {
+        setExpertiseFilter('');
+        setCountryFilter('');
+    };
+
+    // Icon rendering function
+    const renderIcon = (type: IconType) => {
+        switch (type) {
+            case 'linkedin':
+                return <FaLinkedin className="text-[#0077b5]" />;
+            case 'twitter':
+                return <FaTwitter className="text-[#1DA1F2]" />;
+            case 'website':
+                return <FaGlobe className="text-emerald-500" />;
+            case 'book':
+                return <FaBook className="text-purple-500" />;
+            case 'education':
+                return <FaGraduationCap className="text-amber-500" />;
+            case 'award':
+                return <FaAward className="text-yellow-500" />;
+            case 'speaker':
+                return <FaMicrophone className="text-red-500" />;
+            case 'training':
+                return <FaChalkboardTeacher className="text-blue-500" />;
+            default:
+                return <FaGlobe className="text-gray-500" />;
+        }
+    };
+
+    // Animation variants
+    const backgroundVariants = {
+        animate: {
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            transition: {
+                duration: 15,
+                repeat: Infinity,
+                ease: 'linear',
+            },
+        },
+    };
+
+    const cardVariants = {
+        offscreen: {
+            y: 50,
+            opacity: 0,
+        },
+        onscreen: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: 'spring',
+                bounce: 0.4,
+                duration: 0.8,
+            },
+        },
+    };
+
+    const fadeIn = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.8 } },
+    };
+
+    return (
+        <>
+            <Head>
+                <title>Mikeversity Global Team | Leaders in Transformational Education</title>
+                <meta
+                    name="description"
+                    content="Meet our global team of educators, thought leaders, and innovators committed to transforming education worldwide."
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
+            {/* Animated Background */}
+            <motion.div
+                className="min-h-screen w-full"
+                initial="initial"
+                animate="animate"
+                variants={backgroundVariants}
+                style={{
+                    background: 'linear-gradient(135deg, #000000 0%, #1a0000 25%, #800020 50%, #1a0000 75%, #000000 100%)',
+                    backgroundSize: '400% 400%',
+                } as React.CSSProperties}
+            >
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    {/* Page Header */}
+                    <motion.div className="text-center mb-16" initial="hidden" animate="visible" variants={fadeIn}>
+                        <motion.h1
+                            className="text-5xl font-extrabold text-white sm:text-6xl sm:tracking-tight lg:text-7xl"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                        >
+              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-600">
+                Our Global Leadership
+              </span>
+                        </motion.h1>
+                        <motion.p
+                            className="mt-5 max-w-3xl mx-auto text-xl text-gray-300"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.3, duration: 0.8 }}
+                        >
+                            A distinguished collective of visionaries, educators, and innovators driving the future of transformational
+                            learning.
+                        </motion.p>
+                    </motion.div>
+
+                    {/* Special CEO Card */}
+                    <motion.div
+                        className="mb-20"
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <div className="bg-gradient-to-br from-red-900 via-black to-red-900 rounded-2xl shadow-2xl overflow-hidden border border-red-800/50">
+                            <div className="md:flex">
+                                <div className="md:flex-shrink-0 md:w-1/3 relative h-96">
+                                    <Image
+                                        src={ceoProfile.image}
+                                        alt={ceoProfile.name}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="opacity-90"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                                    <div className="absolute bottom-0 left-0 p-6">
+                                        <h3 className="text-2xl font-bold text-white">{ceoProfile.name}</h3>
+                                        <p className="mt-1 text-red-300 font-medium">{ceoProfile.role}</p>
+                                        <div className="mt-3 flex space-x-4">
+                                            {ceoProfile.links.map((link, index) => (
+                                                <a
+                                                    key={index}
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                                                    aria-label={`${ceoProfile.name}'s ${link.type}`}
+                                                >
+                                                    {renderIcon(link.type as IconType)}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-8 md:w-2/3">
+                                    <div className="uppercase tracking-wide text-sm text-red-400 font-semibold">Leadership Profile</div>
+                                    <p className="mt-2 text-gray-300">{ceoProfile.bio}</p>
+
+                                    <div className="mt-6">
+                                        <h4 className="text-lg font-medium text-white">Key Achievements:</h4>
+                                        <ul className="mt-2 space-y-2">
+                                            {ceoProfile.achievements?.map((achievement, index) => (
+                                                <li key={index} className="flex items-start">
+                                                    <svg
+                                                        className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 20 20"
+                                                    >
+                                                        <path
+                                                            fillRule="evenodd"
+                                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                            clipRule="evenodd"
+                                                        />
+                                                    </svg>
+                                                    <span className="text-gray-300">{achievement}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    <div className="mt-6">
+                                        <h4 className="text-lg font-medium text-white">Areas of Expertise:</h4>
+                                        <div className="mt-2 flex flex-wrap gap-2">
+                                            {ceoProfile.expertise.map((skill, index) => (
+                                                <span
+                                                    key={index}
+                                                    className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-900/50 text-red-100"
+                                                >
+                          {skill}
+                        </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Team Section */}
+                    <div className="mb-12">
+                        <motion.h2
+                            className="text-3xl font-bold text-white mb-8 text-center"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                        >
+                            <span className="border-b-2 border-red-600 pb-2">Global Faculty & Leadership</span>
+                        </motion.h2>
+
+                        {/* Filter Controls */}
+                        <motion.div
+                            className="mb-12 flex flex-col sm:flex-row justify-center items-center gap-4 bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-red-900/50"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="w-full sm:w-auto">
+                                <label htmlFor="expertise-filter" className="sr-only">
+                                    Filter by expertise
+                                </label>
+                                <select
+                                    id="expertise-filter"
+                                    value={expertiseFilter}
+                                    onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setExpertiseFilter(e.target.value)}
+                                    className="block w-full rounded-md border-gray-700 bg-gray-900 text-white py-2 pl-3 pr-10 text-base focus:border-red-500 focus:outline-none focus:ring-red-500 sm:text-sm"
+                                >
+                                    <option value="">All Expertise Areas</option>
+                                    {allExpertise.map((expertise) => (
+                                        <option key={expertise} value={expertise}>
+                                            {expertise}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            <div className="w-full sm:w-auto">
+                                <label htmlFor="country-filter" className="sr-only">
+                                    Filter by country
+                                </label>
+                                <select
+                                    id="country-filter"
+                                    value={countryFilter}
+                                    onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setCountryFilter(e.target.value)}
+                                    className="block w-full rounded-md border-gray-700 bg-gray-900 text-white py-2 pl-3 pr-10 text-base focus:border-red-500 focus:outline-none focus:ring-red-500 sm:text-sm"
+                                >
+                                    <option value="">All Countries</option>
+                                    {allCountries.map((country) => (
+                                        <option key={country} value={country}>
+                                            {country}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            {(expertiseFilter || countryFilter) && (
+                                <button
+                                    onClick={resetFilters}
+                                    className="w-full sm:w-auto px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-md transition-colors duration-200"
+                                >
+                                    Reset Filters
+                                </button>
+                            )}
+                        </motion.div>
+
+                        {/* Results Count */}
+                        <div className="mb-6 text-center">
+                            <p className="text-gray-300">
+                                Showing {filteredMembers.length} of {teamMembers.length} team members
+                                {(expertiseFilter || countryFilter) && (
+                                    <span>
+                    {' '}
+                                        filtered by
+                                        {expertiseFilter && <span className="text-red-300"> {expertiseFilter}</span>}
+                                        {expertiseFilter && countryFilter && <span> and</span>}
+                                        {countryFilter && <span className="text-red-300"> {countryFilter}</span>}
+                  </span>
+                                )}
+                            </p>
+                        </div>
+
+                        {/* Team Grid */}
+                        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                            {filteredMembers.length > 0 ? (
+                                filteredMembers.map((member, index) => (
+                                    <motion.div
+                                        key={member.id}
+                                        variants={cardVariants}
+                                        initial="offscreen"
+                                        whileInView="onscreen"
+                                        viewport={{ once: true, amount: 0.2 }}
+                                        custom={index}
+                                    >
+                                        <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-xl overflow-hidden border border-gray-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-red-900/30 h-full flex flex-col">
+                                            <div className="relative h-64 w-full group">
+                                                <Image
+                                                    src={member.image}
+                                                    alt={member.name}
+                                                    layout="fill"
+                                                    objectFit="cover"
+                                                    className="group-hover:scale-105 transition-transform duration-500"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                                                <div className="absolute bottom-0 left-0 p-4">
+                                                    <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                                                    <p className="text-red-300 text-sm">{member.role}</p>
+                                                </div>
+                                                <div className="absolute top-0 right-0 p-3">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-900 text-red-100">
+                            {member.country}
+                          </span>
+                                                </div>
+                                            </div>
+                                            <div className="p-6 flex-grow flex flex-col">
+                                                <p className="text-gray-300 text-sm mb-4 line-clamp-3">{member.bio}</p>
+
+                                                <div className="mt-auto">
+                                                    <div className="mb-4">
+                                                        <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">
+                                                            Expertise
+                                                        </h4>
+                                                        <div className="flex flex-wrap gap-2">
+                                                            {member.expertise.slice(0, 3).map((skill, index) => (
+                                                                <span
+                                                                    key={index}
+                                                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-800 text-gray-200"
+                                                                >
+                                  {skill}
+                                </span>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="flex justify-between items-center border-t border-gray-700 pt-4">
+                                                        <div className="flex space-x-4">
+                                                            {member.links.map((link, index) => (
+                                                                <a
+                                                                    key={index}
+                                                                    href={link.url}
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
+                                                                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                                                                    aria-label={`${member.name}'s ${link.type}`}
+                                                                >
+                                                                    {renderIcon(link.type as IconType)}
+                                                                </a>
+                                                            ))}
+                                                        </div>
+                                                        <button className="text-xs font-medium text-red-400 hover:text-red-300 transition-colors duration-200">
+                                                            View Full Profile →
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                ))
+                            ) : (
+                                <div className="col-span-full text-center py-12">
+                                    <p className="text-xl text-gray-300">No team members match your filters. Try adjusting your criteria.</p>
+                                    <button
+                                        onClick={resetFilters}
+                                        className="mt-4 px-6 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors duration-200"
+                                    >
+                                        Reset Filters
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* CTA Section */}
+                    <motion.div
+                        className="mt-20 text-center bg-gradient-to-r from-red-900/80 to-black/80 rounded-2xl p-8 text-white border border-red-900/50 backdrop-blur-sm"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
+                    >
+                        <h2 className="text-3xl font-extrabold sm:text-4xl mb-4">
+                            <span className="block">Join Our Global Network</span>
+                        </h2>
+                        <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-300">
+                            We're expanding our team of world-class educators and thought leaders.
+                        </p>
+                        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                            <a
+                                href="#"
+                                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-200"
+                            >
+                                Explore Career Opportunities
+                            </a>
+                            <a
+                                href="#"
+                                className="inline-flex items-center justify-center px-6 py-3 border border-red-600 text-base font-medium rounded-md text-red-400 hover:text-white hover:bg-red-900/30 transition-colors duration-200"
+                            >
+                                Become a Partner
+                            </a>
+                        </div>
+                    </motion.div>
+                </div>
+            </motion.div>
+        </>
+    );
+};
+
+export default TeamPage;

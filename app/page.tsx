@@ -1,29 +1,22 @@
-import HeroComponent from "@/app/compo/hero";
 import TopCoursesComponent from "@/app/compo/topcourses";
 import SoftSkillsComponent from "@/app/compo/softskills";
 import TrainingDomainsComponent from "@/app/compo/trainingdomains";
-import MissionComponent from "@/app/compo/mission";
 import CommunityComponent from "@/app/compo/community";
-import ExpertiseComponent from "@/app/compo/expertise";
-import TestimonialsComponent from "@/app/compo/testemonials";
 import ImpactsComponent from "@/app/compo/impacts";
 import VisionComponent from "@/app/compo/vision";
-import TestimonialsYT from "@/app/compo/testimonialsYT";
-
+import ClientFeedbackComponent from "@/app/compo/client-feedback";
+import TraineesCommentsComponent from "@/app/compo/student-feedback";
+import FounderMessage from "@/app/compo/founder";
+import WhyMikeversity from "@/app/compo/why";
 export default function Home() {
   return (
     <main >
-        <MissionComponent/>
+        <FounderMessage />
         <VisionComponent/>
-        {/*<HeroComponent />*/}
+        <WhyMikeversity/>
         <TopCoursesComponent/>
         <TrainingDomainsComponent/>
         <SoftSkillsComponent/>
-        <ExpertiseComponent />
-        <ImpactsComponent/>
-        <TestimonialsComponent />
-        <TestimonialsYT/>
-        <CommunityComponent/>
     </main>
   );
 }

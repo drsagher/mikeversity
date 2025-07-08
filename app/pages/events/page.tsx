@@ -1,201 +1,220 @@
-import Eve1 from '@/public/land/top1.jpeg'
-import Eve2 from '@/public/land/top2.jpg'
-import Eve3 from '@/public/land/top3.jpg'
-import Eve4 from '@/public/land/top4.jpg'
-import Eve5 from '@/public/port/top1.jpg'
-import Eve6 from '@/public/port/top2.png'
-import Eve7 from '@/public/port/top3.jpg'
-import Eve8 from '@/public/port/top4.jpg'
-import Eve9 from '@/public/port/top5.jpg'
-import Eve10 from '@/public/port/top6.jpg'
-import Eve11 from '@/public/port/top7.jpg'
-import Eve12 from '@/public/port/top8.jpg'
-import Eve13 from '@/public/port/top9.jpg'
-import Eve14 from '@/public/port/top10.jpeg'
-import Eve15 from '@/public/port/top11.jpeg'
-import Eve16 from '@/public/port/top12.jpeg'
-import Eve17 from '@/public/port/top13.jpg'
-import Eve18 from '@/public/port/top14.jpeg'
-import Eve19 from '@/public/port/top15.jpg'
-import Eve20 from '@/public/port/top16.jpg'
-import Eve21 from '@/public/port/top17.jpg'
-import Eve22 from '@/public/port/top18.jpeg'
-import Eve23 from '@/public/port/top19.jpeg'
-import Eve24 from '@/public/port/top20.jpg'
-import Eve25 from '@/public/port/top21.jpg'
-import Sqo1 from '@/public/sqo1/sqo1.jpg'
-import Sqo2 from '@/public/sqo1/sqo2.jpeg'
-import Sqo3 from '@/public/sqo1/sqo3.jpg'
-import Sqo4 from '@/public/sqo1/sqo4.jpg'
-import Sqo5 from '@/public/sqo1/sqo5.jpg'
-import Sqo6 from '@/public/sqo1/sqo6.jpg'
-import Sqo7 from '@/public/sqo1/sqo7.jpg'
-import Sqo8 from '@/public/sqo1/sqo8.jpg'
-import Sqo9 from '@/public/sqo1/sqo9.jpg'
-import Sqo10 from '@/public/sqo1/sqo10.jpg'
-import Sqo11 from '@/public/sqo1/sqo11.jpg'
-import Sqo12 from '@/public/sqo1/sqo12.jpg'
-import Sqo13 from '@/public/sqo1/sqo13.jpg'
-import Sqo14 from '@/public/sqo1/sqo14.jpg'
-import Sqo15 from '@/public/sqo1/sqo15.jpg'
-import Sqo16 from '@/public/sqo1/sqo16.jpg'
-import Sqo17 from '@/public/sqo1/sqo17.png'
-import Sqo18 from '@/public/sqo1/sqo18.jpg'
-import Sqo19 from '@/public/sqo1/sqo19.jpg'
-import Sqo20 from '@/public/sqo1/sqo20.jpg'
-import Sqo21 from '@/public/sqo1/sqo21.jpg'
-import Sqo22 from '@/public/sqo1/sqo22.jpg'
-import Sqo23 from '@/public/sqo1/sqo23.jpeg'
-import Sqo24 from '@/public/sqo1/sqo24.jpeg'
-import Sqo25 from '@/public/sqo1/sqo25.jpeg'
-import Sqo26 from '@/public/sqo1/sqo26.jpg'
-import Tall1 from '@/public/tall/top5.jpg'
-import Tall2 from '@/public/tall/top55.jpg'
-import Tall3 from '@/public/tall/top43.jpeg'
-import Tall4 from '@/public/tall/top39.jpg'
-import Tall5 from '@/public/tall/top52.jpg'
-import { MdEventRepeat } from "react-icons/md";
-import UpEv from '@/public/ahds.png'
-
 import Image from "next/image";
+import { FaCalendarAlt, FaNewspaper, FaUsers, FaGlobe, FaChartLine } from "react-icons/fa";
 
-export default function EventsPage(){
-    return(
-        <div className={'container mx-auto flex flex-col p-2'}>
+export default function NewsAndEventsPage() {
+    return (
+        <div
+            className="min-h-screen p-8"
+            style={{
+                background: 'linear-gradient(135deg, #FF416C, #00B09B, #3A1C71)',
+                fontFamily: 'Poppins, sans-serif',
+            }}
+        >
+            <div className="max-w-7xl mx-auto">
+                {/* Page Header */}
+                <div className="flex items-center gap-4 mb-12">
+                    <FaNewspaper size={48} className="text-white" />
+                    <h1 className="text-4xl font-bold text-white uppercase">News & Events</h1>
+                </div>
 
-            <div className={'flex flex-col items-center justify-center my-4 border-4 border-indigo-900 p-10 rounded-xl hover:border-red-800'}>
-                <Image src={UpEv} alt={''} height={200} width={200}/>
-                <p className={'flex items-center gap-2 text-md lg:text-xl font-bold py-4 text-indigo-900 uppercase'}>Upcoming
-                    Event</p>
-                <p className={'text-xs lg:text-lg text-red-600 uppercase'}>Ahd Ul Khair private School, East Side of Masjid Aqeel, East
-                    Salalah, Dhofar, Oman</p>
-            </div>
+                {/* Upcoming Events Section */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-bold text-white uppercase mb-6">Upcoming Events</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* Event Card 1 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaCalendarAlt size={24} className="text-blue-600" />
+                                <p className="text-lg font-bold text-gray-800">October 15, 2023</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Leadership Summit 2023</h3>
+                            <p className="text-gray-700">
+                                Join us for an inspiring day of leadership talks, workshops, and networking with industry experts.
+                            </p>
+                        </div>
 
-            <p className={'flex items-center gap-4 text-3xl font-bold uppercase py-6 text-red-600'}><MdEventRepeat
-                size={60}/>
-                Events
-            </p>
+                        {/* Event Card 2 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaCalendarAlt size={24} className="text-blue-600" />
+                                <p className="text-lg font-bold text-gray-800">November 5, 2023</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Entrepreneurship Bootcamp</h3>
+                            <p className="text-gray-700">
+                                A 3-day intensive program designed to help aspiring entrepreneurs turn their ideas into successful businesses.
+                            </p>
+                        </div>
 
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 '}>
-                <Image src={Eve1} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve2} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve3} alt={''} height={600} width={800}
-                       className={'shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve4} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-            </div>
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
-                <Image src={Eve5} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve6} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve7} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve8} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve9} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve10} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve11} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve12} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve13} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve14} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve15} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve16} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve17} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve18} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve19} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve20} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                {/*<Image src={Eve21} alt={''} height={600} width={800} className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>*/}
-                <Image src={Eve22} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve23} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve24} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Eve25} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-            </div>
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
-                <Image src={Sqo1} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo2} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo3} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo4} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo5} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo6} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo7} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo8} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo9} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo10} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo11} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo12} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo13} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo14} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo15} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo16} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo17} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo18} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo19} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo20} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo21} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo22} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo23} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo24} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo25} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Sqo26} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-            </div>
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'}>
-                <Image src={Tall1} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Tall2} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Tall3} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Tall4} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
-                <Image src={Tall5} alt={''} height={600} width={800}
-                       className={'h-full shadow-md shadow-red-700 hover:saturate-150 rounded-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:skew-y-2'}/>
+                        {/* Event Card 3 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaCalendarAlt size={24} className="text-blue-600" />
+                                <p className="text-lg font-bold text-gray-800">December 10, 2023</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Global Innovation Forum</h3>
+                            <p className="text-gray-700">
+                                Explore the latest trends in innovation and technology with global thought leaders and innovators.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                {/* Recent News Section */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-bold text-white uppercase mb-6">Recent News</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* News Card 1 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/news1.jpg"
+                                alt="News 1"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">New Partnership with Tech Giants</h3>
+                            <p className="text-gray-700">
+                                We are excited to announce a new partnership with leading tech companies to drive innovation in the industry.
+                            </p>
+                        </div>
+
+                        {/* News Card 2 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/news2.jpg"
+                                alt="News 2"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Award for Excellence in Leadership</h3>
+                            <p className="text-gray-700">
+                                Our CEO has been recognized with the prestigious Global Leadership Award for outstanding contributions to the field.
+                            </p>
+                        </div>
+
+                        {/* News Card 3 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/news3.jpg"
+                                alt="News 3"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Launch of New Training Programs</h3>
+                            <p className="text-gray-700">
+                                We have launched a series of new training programs to empower professionals with cutting-edge skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Past Events Section */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-bold text-white uppercase mb-6">Past Events</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* Past Event Card 1 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/past-event1.jpg"
+                                alt="Past Event 1"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Global Leadership Conference 2023</h3>
+                            <p className="text-gray-700">
+                                A recap of the inspiring talks and workshops from the Global Leadership Conference held earlier this year.
+                            </p>
+                        </div>
+
+                        {/* Past Event Card 2 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/past-event2.jpg"
+                                alt="Past Event 2"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Women in Tech Summit</h3>
+                            <p className="text-gray-700">
+                                Highlights from the Women in Tech Summit, featuring empowering stories and groundbreaking innovations.
+                            </p>
+                        </div>
+
+                        {/* Past Event Card 3 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <Image
+                                src="/images/past-event3.jpg"
+                                alt="Past Event 3"
+                                width={400}
+                                height={300}
+                                className="rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Innovation Expo 2023</h3>
+                            <p className="text-gray-700">
+                                A look back at the Innovation Expo, where the latest technologies and ideas were showcased.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Events Statistics in History Section */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-bold text-white uppercase mb-6">Events Statistics in History</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {/* Statistic 1 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaCalendarAlt size={32} className="text-blue-600" />
+                                <p className="text-3xl font-bold text-gray-800">150+</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Events Hosted</h3>
+                            <p className="text-gray-700">
+                                Over 150 events organized globally, covering leadership, innovation, and entrepreneurship.
+                            </p>
+                        </div>
+
+                        {/* Statistic 2 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaUsers size={32} className="text-green-600" />
+                                <p className="text-3xl font-bold text-gray-800">50K+</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Attendees</h3>
+                            <p className="text-gray-700">
+                                More than 50,000 professionals have attended our events to learn, network, and grow.
+                            </p>
+                        </div>
+
+                        {/* Statistic 3 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaGlobe size={32} className="text-purple-600" />
+                                <p className="text-3xl font-bold text-gray-800">65+</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Countries Represented</h3>
+                            <p className="text-gray-700">
+                                Our events have attracted participants from over 65 countries worldwide.
+                            </p>
+                        </div>
+
+                        {/* Statistic 4 */}
+                        <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
+                            <div className="flex items-center gap-4 mb-4">
+                                <FaChartLine size={32} className="text-red-600" />
+                                <p className="text-3xl font-bold text-gray-800">95%</p>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">Satisfaction Rate</h3>
+                            <p className="text-gray-700">
+                                95% of attendees reported high satisfaction with the quality and impact of our events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    )
+    );
 }

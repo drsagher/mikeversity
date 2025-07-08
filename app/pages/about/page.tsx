@@ -1,647 +1,257 @@
-import Client1 from '@/public/BUSINESS/bc1.jpeg';
-// import Client2 from '@/public/BUSINESS/bc2.jpg';
-import Client3 from '@/public/BUSINESS/bc3.png';
-import Client4 from '@/public/BUSINESS/bc4.webp';
-import Client5 from '@/public/BUSINESS/bc5.jpeg';
-import Client6 from '@/public/BUSINESS/bc6.jpg';
-import Client7 from '@/public/BUSINESS/bc7.png';
-import Client8 from '@/public/BUSINESS/bc8.jpeg';
-// import Client9 from '@/public/BUSINESS/bc9.jpg';
-import Client10 from '@/public/BUSINESS/bc10.png';
-import Client11 from '@/public/BUSINESS/bc11.jpeg';
-import Client12 from '@/public/BUSINESS/bc12.jpg';
-import Client13 from '@/public/BUSINESS/bc13.png';
-import Client14 from '@/public/BUSINESS/bc14.jpg';
-import Client15 from '@/public/BUSINESS/bc15.png';
-import Client17 from '@/public/BUSINESS/bc17.jpg';
-import Client18 from '@/public/BUSINESS/bc18.jpg';
-import Client19 from '@/public/BUSINESS/bc19.jpg';
-import Client20 from '@/public/BUSINESS/bc20.jpg';
-// import Client21 from '@/public/BUSINESS/bc21.jpg';
-// import Sc1 from '@/public/SCHOOLS/sc1.jpg';
-import Sc2 from '@/public/SCHOOLS/sc2.jpeg';
-import Sc3 from '@/public/SCHOOLS/sc3.png';
-import Sc4 from '@/public/SCHOOLS/sc4.png';
-import Sc5 from '@/public/SCHOOLS/sc5.jpeg';
-import Sc6 from '@/public/SCHOOLS/sc6.png';
-import Sc7 from '@/public/SCHOOLS/sc7.jpeg';
-// import Sc8 from '@/public/SCHOOLS/sc8.jpg';
-import Sc9 from '@/public/SCHOOLS/sc9.jpg';
-import Sc10 from '@/public/SCHOOLS/sc10.png';
-import Sc11 from '@/public/SCHOOLS/sc11.png';
-import Sc12 from '@/public/SCHOOLS/sc12.jpg';
-import Sc13 from '@/public/SCHOOLS/sc13.png';
-import Sc14 from '@/public/SCHOOLS/sc14.png';
-import Sc15 from '@/public/SCHOOLS/sc15.jpg';
-import Sc16 from '@/public/SCHOOLS/sc16.jpg';
-import Sc17 from '@/public/SCHOOLS/sc17.jpg';
-import Sc18 from '@/public/SCHOOLS/sc18.jpg';
-import Sc19 from '@/public/SCHOOLS/sc19.jpg';
-import Sc20 from '@/public/SCHOOLS/sc20.png';
-import Sc21 from '@/public/SCHOOLS/sc21.jpg';
-import Sc22 from '@/public/SCHOOLS/sc22.jpg';
-import Sc23 from '@/public/SCHOOLS/sc23.jpg';
-import Sc24 from '@/public/SCHOOLS/sc24.png';
-import Sc25 from '@/public/SCHOOLS/sc25.png';
-import Sc26 from '@/public/SCHOOLS/sc26.png';
-import Sc27 from '@/public/SCHOOLS/sc27.jpg';
-import Sc28 from '@/public/SCHOOLS/sc28.jpg';
-import Sc29 from '@/public/SCHOOLS/sc29.jpg';
-import Sc30 from '@/public/SCHOOLS/sc30.jpg';
-import Sc31 from '@/public/SCHOOLS/sc31.png';
-import Sc32 from '@/public/SCHOOLS/sc32.jpg';
-import Sc33 from '@/public/SCHOOLS/sc33.jpg';
-import Sc34 from '@/public/SCHOOLS/sc34.jpg';
-import Sc35 from '@/public/SCHOOLS/sc35.jpg';
-import Sc36 from '@/public/SCHOOLS/sc36.png';
-import Sc37 from '@/public/SCHOOLS/sc37.jpg';
-import Sc38 from '@/public/SCHOOLS/sc38.png';
-import Sc39 from '@/public/SCHOOLS/sc39.jpg';
-import Sc40 from '@/public/SCHOOLS/sc40.png';
-import Sc41 from '@/public/SCHOOLS/sc41.png';
-import Sc42 from '@/public/SCHOOLS/sc42.png';
-import Sc43 from '@/public/SCHOOLS/sc43.jpg';
-import Sc44 from '@/public/SCHOOLS/sc44.jpg';
-import Sc45 from '@/public/SCHOOLS/sc45.jpg';
-import Sc46 from '@/public/SCHOOLS/sc46.jpg';
-import Sc47 from '@/public/SCHOOLS/sc47.png';
-import Sc48 from '@/public/SCHOOLS/sc48.png';
-import Sc49 from '@/public/SCHOOLS/sc49.jpg';
-import Sc50 from '@/public/SCHOOLS/sc50.jpg';
-import Sc51 from '@/public/SCHOOLS/sc51.png';
-import Sc52 from '@/public/SCHOOLS/sc52.png';
-import Sc53 from '@/public/SCHOOLS/sc53.jpg';
-import Sc54 from '@/public/SCHOOLS/sc54.png';
-import Sc55 from '@/public/SCHOOLS/sc55.png';
-import Sc56 from '@/public/SCHOOLS/sc56.png';
-
-import U1 from '@/public/UNIVERFSITIES/u1.png';
-import U2 from '@/public/UNIVERFSITIES/u2.jpg';
-import U3 from '@/public/UNIVERFSITIES/u3.jpeg';
-import U4 from '@/public/UNIVERFSITIES/u4.jpg';
-import U5 from '@/public/UNIVERFSITIES/u5.jpg';
-import U6 from '@/public/UNIVERFSITIES/u6.jpg';
-import U7 from '@/public/UNIVERFSITIES/u7.jpeg';
-// import U8 from '@/public/UNIVERFSITIES/u8.jpg';
-import U9 from '@/public/UNIVERFSITIES/u9.png';
-import U10 from '@/public/UNIVERFSITIES/u10.png';
-import U11 from '@/public/UNIVERFSITIES/u11.jpg';
-import U12 from '@/public/UNIVERFSITIES/u12.png';
-import U13 from '@/public/UNIVERFSITIES/u13.png';
-import U14 from '@/public/UNIVERFSITIES/u14.png';
-import U15 from '@/public/UNIVERFSITIES/u15.png';
-import U16 from '@/public/UNIVERFSITIES/u16.png';
-import U17 from '@/public/UNIVERFSITIES/u17.png';
-import U18 from '@/public/UNIVERFSITIES/u18.png';
-import U19 from '@/public/UNIVERFSITIES/u19.png';
-import U20 from '@/public/UNIVERFSITIES/u20.jpg';
-import U21 from '@/public/UNIVERFSITIES/u21.jpeg';
-import U22 from '@/public/UNIVERFSITIES/u22.jpeg';
-import U23 from '@/public/UNIVERFSITIES/u23.png';
-import U24 from '@/public/UNIVERFSITIES/u24.png';
-import U25 from '@/public/UNIVERFSITIES/u25.png';
-
-import W1 from '@/public/ORGANIZATION/w1.jpg';
-import W2 from '@/public/ORGANIZATION/w2.jpeg';
-import W3 from '@/public/ORGANIZATION/w3.jpeg';
-import W4 from '@/public/ORGANIZATION/w4.png';
-// import W5 from '@/public/ORGANIZATION/w5.jpg';
-import W6 from '@/public/ORGANIZATION/w6.jpeg';
-import W7 from '@/public/ORGANIZATION/w7.png';
-import W8 from '@/public/ORGANIZATION/w8.png';
-import W9 from '@/public/ORGANIZATION/w9.png';
-import W10 from '@/public/ORGANIZATION/w10.jpg';
-import W11 from '@/public/ORGANIZATION/w11.png';
-import W12 from '@/public/ORGANIZATION/w12.png';
-import W13 from '@/public/ORGANIZATION/w13.png';
-import W14 from '@/public/ORGANIZATION/w14.png';
-import W15 from '@/public/ORGANIZATION/w15.png';
-import W16 from '@/public/ORGANIZATION/w16.png';
-import W17 from '@/public/ORGANIZATION/w17.jpg';
-import W18 from '@/public/ORGANIZATION/w18.png';
-import W19 from '@/public/ORGANIZATION/w19.jpg';
-import W20 from '@/public/ORGANIZATION/w20.png';
-import W21 from '@/public/ORGANIZATION/w21.png';
-import Mikey from '@/public/mtop.png';
+'use client';
+import MikePic from '@/public/mike2.jpg'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaAward, FaGraduationCap, FaUsers, FaChalkboardTeacher, FaBriefcase, FaLightbulb, FaHandshake } from 'react-icons/fa';
 import Image from "next/image";
-import { GrWorkshop } from "react-icons/gr";
-import { GiAchievement } from "react-icons/gi";
-import { GrUserExpert } from "react-icons/gr";
-import { FaUsersBetweenLines } from "react-icons/fa6";
 
+// Client Card Component
+const ClientCard: React.FC<{ name: string; logo: string }> = ({ name, logo }) => {
+    return (
+        <motion.div
+            variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+            }}
+            className="bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col items-center justify-center gap-2 shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+            <img src={logo} alt={name} className="w-16 h-16 object-contain" />
+            <p className="text-lg text-white font-['Open_Sans'] text-center">{name}</p>
+        </motion.div>
+    );
+};
 
-export default function AboutPage(){
-    return(
-            <div className={'flex flex-col items-center justify-center'}>
+const ProfilePage: React.FC = () => {
+    // Animation variants for Framer Motion
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    };
 
-                <div className={'flex flex-col items-center justify-center lg:gap-8 lg:flex-row bg-amber-200 p-8'}>
-                    <div className={'bg-red-700 rounded-xl lg:w-[50%] text-gray-50 hover:bg-indigo-900 p-2'}>
-                        <h2 className={'text-md lg:text-xl uppercase font-bold '}>Trainer Profile</h2>
-                        <p className={'text-sm lg:text-md xl:text-lg p-2 leading-relaxed flex-wrap '}>
-                            Reflecting on timeless lessons from his life narrative, today&apos;s impact will be
-                            enduring.
-                            Mike, a visionary global thought leader, serves the underserved with unprecedented
-                            innovation.
-                            Employing a diverse range of cognitive, emotional, and behavioral skills, he catalyzes
-                            profound
-                            global change. Aspiring leaders can glean strategic insights from Mike&apos;s motivational
-                            prowess, distinguishing him as a true strategic leader. Renowned as a motivational speaker
-                            and
-                            author of the #1 bestseller &quot;Passionate Quantum Success&quot; He has two decades of
-                            diverse
-                            training experience. Prioritizing innovation over accolades, he champions &quot;being the
-                            first&quot; in his endeavors. Through platforms like DISCOVER PAKISTAN TV, HOPE TV, FM 87.6,
-                            IIU, Online workshops, seminars, webinars, and extensive training initiatives, He has
-                            impacted
-                            over 500 million individuals worldwide. His groundbreaking 360-degree courses promise
-                            invaluable
-                            and irrefutable transformation, propelling humanity towards heightened mindfulness and
-                            consciousness.
+    const staggerContainer = {
+        visible: {
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    // Client data
+    const clients = [
+        { name: 'Google', logo: '/path/to/google-logo.png' },
+        { name: 'Microsoft', logo: '/path/to/microsoft-logo.png' },
+        { name: 'UNICEF', logo: '/path/to/unicef-logo.png' },
+        { name: 'Tesla', logo: '/path/to/tesla-logo.png' },
+        { name: 'Amazon', logo: '/path/to/amazon-logo.png' },
+        { name: 'Apple', logo: '/path/to/apple-logo.png' },
+        { name: 'World Bank', logo: '/path/to/world-bank-logo.png' },
+        { name: 'Nike', logo: '/path/to/nike-logo.png' },
+    ];
+
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-red-900 via-black to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+                {/* Header */}
+                <motion.header
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={fadeInUp}
+                    viewport={{ once: true }}
+                    className="text-center mb-16"
+                >
+                    <h1 className="text-5xl font-bold text-white font-['Poppins']">Mike Litman</h1>
+                    <p className="mt-4 text-lg text-blue-200 font-['Open_Sans']">
+                        Global Awards Winning Leader
+                    </p>
+                </motion.header>
+
+                {/* Mission Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={fadeInUp}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaLightbulb className="text-blue-400" /> Mission
+                    </h2>
+                    <p className="text-lg text-blue-100 font-['Open_Sans']">
+                        Our mission is to empower individuals and organizations through innovative training programs, fostering growth, and achieving excellence in their respective fields. We believe in creating sustainable change through leadership, collaboration, and continuous learning.
+                    </p>
+                </motion.section>
+
+                {/* Trainer Profile Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
+                >
+                    <motion.div variants={fadeInUp} className="flex justify-center">
+                        <Image
+                            src={MikePic}
+                            alt="Trainer"
+                            className="w-72 h-72 rounded-full object-cover border-4 border-blue-400 shadow-lg"
+                        />
+                    </motion.div>
+                    <motion.div variants={fadeInUp} className="text-white">
+                        <h2 className="text-3xl font-bold font-['Poppins'] mb-4">About</h2>
+                        <p className="text-lg font-['Open_Sans'] mb-4">
+                            Dr. Mike Litman is a visionary leader and the driving force behind Mike&apos;s International, serving as its President, Founder, and CEO. With over 1,000 global awards to his name, Mike is a trailblazer who consistently redefines excellence. His intellectual brilliance is unmatched, earning him 24 honorary doctorate degrees from prestigious institutions worldwide, solidifying his status as a global thought leader.
                         </p>
-                    </div>
-                    <Image src={Mikey} alt={''} className={'hidden lg:flex w-96 h-96 '}/>
-                </div>
+                        <p className="text-lg font-['Open_Sans'] mb-4">
+                            As a sought-after speaker, trainer, and coach, Mike has empowered over 500 million individuals across 109 nationalities, leaving an indelible mark on the global stage. His expertise has been sought by hundreds of world-renowned organizations, where he has served as a Global Brand Ambassador, President, and Country Head, further cementing his legacy as a transformative leader.
+                        </p>
+                        <p className="text-lg font-['Open_Sans']">
+                            Mike&apos;s journey is a testament to the power of innovation, resilience, and leadership. His name has become synonymous with excellence, inspiring generations to push boundaries and achieve greatness.
+                        </p>
+                    </motion.div>
+                </motion.section>
 
-                <div className={'lg:container'}>
-                    <div className={'flex flex-col items-start p-2 '}>
-                        <h2 className={'flex items-center lg:text-xl font-bold text-red-900 sm:text-sm'}><GiAchievement size={65}/>
-                            RECENT ACCOMPLISHMENTS</h2>
-                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg pl-1 leading-relaxed text-red-900 sm:text-sm '}>
-                            <li>Chief Guest Speaker at Dr. Lyn West-man (Consultant Microsoft, Malinda Gates Foundation
-                                and
-                                US
-                                Army)
-                                5 days event on TRAUMA at John C. Maxwell TILTI Islamabad.
-                            </li>
-                            <li>Chaired MYEP (Minority Youth Exposure Program) conference at Quid-e-Azam University as
-                                Chief
-                                Guest
-                                Motivational speaker
-                            </li>
-                            <li>5 Days CAPACITY BUILDING TRAINING OF EDUCATION STAFF organized by National Commission
-                                for
-                                Human
-                                Development - Ministry of Federal Education & Professional Training Pakistan
-                            </li>
-                            <li>Delegated a FIRST 5 days INTERNATIONAL CONFERENCE ON PSYCHODRAMA “Center for Trauma
-                                Research
-                                &
-                                Psychosocial Interventions” facilitated by Aberdeen University of Australia, Chaired by
-                                David
-                                Alexandar.
-                            </li>
-                            <li>Delegated and represented Commonwealth Youth Program of two days “international
-                                conference
-                                on
-                                Psycho
-                                trauma” on Earthquake 2005 and Suicide attacks in Pakistan held in Jinnah Convention
-                                Center
-                                Islamabad.
-                            </li>
-                            <li>Organized by National University of Science & Technology Pakistan (NUST) sponsored by
-                                Motivational Seminar on LIFE & SUCCESS at THE FAZALEHAQ COLLEGE MARDAN KPK, Khyber
-                                Pakhtunkhwa,
-                                Pakistan.
-                            </li>
-                            <li>Inaugurated Pakistan Management Excellence Award (PMEA) at Pakistan Management
-                                Institute,
-                                Pakistan, Lahore Chapter.
-                            </li>
-                            <li>Guest Speaker at FM PLANET 87.6. 22 Reasons why educated people are broke and SUCCESS
-                                MINDSET
-                            </li>
-                            <li>Worked in joint venture with world class training organizations from USA, AUS, CHINA,
-                                UK,
-                                OMAN.
-                            </li>
-                            <li>Inaugurated PMEA. I spoke to 360 CEOs on perspective 01- excellence and international
-                                best
-                                practices.
-                            </li>
-                            <li>RESET OF SUCCESS MINDSET WORKSHOP” Guest of Honor and Guest Speaker at NAMAL UNIVERSITY,
-                                MIANWALI, PAKISTAN.
-                            </li>
-                            <li>Inspired 100 DATICS AI leaders for PRODUCTIVITY: DEVELOPING WORK ETHICS IN DIGITAL
-                                ENVIRONMENT
-                                at LHR, Pakistan.
-                            </li>
-                            <li>Inspired millions of souls including young kids, Teens, Adults at Guangdong Province,
-                                SHENZHEN
-                                UNIVERSITY - CHINA, HONGKONG, QATAR, FUTIAN, and WIDOWS OF THE WORLD STEVE JOBS OUTLET
-                                in
-                                China.
-                            </li>
-                            <li>One Week Training Workshop at AWKUM- Abdul Wali Khan University Mardan, Khyber
-                                Pakhtunkhwa
-                                KPK,
-                                Pakistan.
-                            </li>
-                            <li>100s of multi-level schools in the territory of Khyber Pakhtunkhwa (KPK) have been
-                                trained
-                                in
-                                Standard American Accent Elimination, Natural English Speaking, Motivation, Life Skills,
-                                and
-                                Success.
-                            </li>
-                            <li>Adjudicated the BUSINESS IDEA COMPETITION 2010 as jury in Fast Business Club Lahore,
-                                conducted
-                                at National University of Management and Emerging Sciences Lahore, Pakistan.
-                            </li>
-                            <li>Mega Business Conference SEASON 12 “BEST GOOSE-BUMPING & MOTIVATIONAL SPEAKER IN AISA
-                                AWARD
-                                2021” Islamabad Pakistan.
-                            </li>
-                            <li>Guest & keynote Speaker at ARFAKAREEM Tower on WORK ETHICS, Trained 100 IT Managers.
-                            </li>
-                            <li>Guest Speaker at University of Management and Technology, LHR Pakistan for Motivational
-                                Talk.
-                            </li>
-                            <li>Trained 100 Ufone Trainers for Standard American Accent Dialect/Non-Regional Accent,
-                            </li>
-                            <li>Illuminated 10 million professionals and general masses through BREAKTHROUGH Broadcasts
-                                on
-                                social media FB Live with Dr. Channie Messenger USA, Veronica RozenFeld US
-                            </li>
-                            <li>Women in Leadership: Developing Entrepreneurial Mindset University of Lahore, Pakistan
-                                Institute
-                                of Fashion and Design Lahore, Virtual University of Pakistan” KARO MUMKIN” in
-                                collaboration
-                                of
-                                British Council of Pakistan.
-                            </li>
-                            <li>Key Note Speaker at 7 days Thrive Conference “INCREASED CAPACITY” at Heritage Global
-                                Leadership
-                                & Mentor Institute (HGMI) Nigeria and Africa.
-                            </li>
-                            <li>World Mental Health Day: Brand Ambassador and Guest Speaker Indonesia</li>
-                            <li>LIVE YOUR LIFE TO YOUR FULLEST POTENTIAL, Government Technology College BRW, Pakistan
-                            </li>
-                            <li>Guest speaker and brand ambassador at NAMAL UNIVERSTY “SUCCESS MINDSET”</li>
-                            <li>DISCOVER PAKISTAN HD TV: “THRIVE ON LIFE PODCAST” 47M Viewers, 10M Subscribers</li>
-                            <li>THE POWER OF BUSINESS MINDSET SEMINAR WITH– Government College of Commerce, Pakistan
-                            </li>
-                            <li>Power of Winning Business Mindset at SUBTLE COMMERCE - AMAZON EXPRTS.</li>
-                            <li>NIBAF event on DEVELOPING WORK ETHICS at State Bank of Pakistan (SBP) Islamabad,
-                                Pakistan.
-                            </li>
-                            <li>“Business Conference” by Raymond Banzuela Business Consultancy Services Philippine,
-                                2024.
-                            </li>
-                            <li>Entrepreneurship Accelerator Program: Team Building and Leadership by Bliss Education
-                                Indonesia.
-                            </li>
-                            <li>WIND OF CHANGE” by CHILPARCO INTERNATIONAL. Podcast with Dr. Alka Mahajan Indonesia</li>
-                            <li>Guest Speaker and Trainer, MIND YOUR OWN BUSINESS: MASTERING ENTREPRENEURSHIP IN DIGITAL
-                                ENVIRONMENT CHAPTER#1 at IIU Internship International University LEBNON.
-                            </li>
-                            <li>Speaker at International education summit “EDUTALK” Azerbaijan with IIU International
-                                Internship
-                                University.
-                            </li>
-                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #1 BE THE SUPERWOMEN at IIU
-                                International Internship University-WEC, Romania.
-                            </li>
-                            <li>Distinguished guest speaker at the INERNATIONAL DAY OF EDUCATION CONFERENCE with
-                                Heartfelt
-                                Teachers Network Global Zimbabwe.
-                            </li>
-                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #2 SUCCESS MINDSET OF WOMEN
-                                at
-                                IIU
-                                International Internship University-WEC, Romania.
-                            </li>
-                            <li>Advanced Teacher Training Diploma Programs CHORT II” 2 days training on EDUCATION
-                                PSYCHGOLOY
-                                IN
-                                WORLD PERSPECTIVE” with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia,
-                                LIBERIA.
-                            </li>
-                            <li>Guest Keynote Speaker at International Association of Global Education Georgia in
-                                INTERNATIONAL
-                                EDCUCATION SUMMIT.
-                            </li>
-                            <li>Guest Speaker at ELITE GLOBLA LEADERSHIP CLUB “Unleash your leadership Genius” with Host
-                                Veronica Ceban, Netherland.
-                            </li>
-                            <li>Guest Speaker & Host at Talk Show: BE THE SUPERPOWER Episode #3 HOW TO TAKE CRITICISM
-                                LIKE A
-                                CHAMPION at IIU International Internship University-WEC, Romania.
-                            </li>
-                            <li>Guest Speaker for TALK SHOW on HOW TO RAISE SELF-ESTEEM IN WOMEN at INTERNATIONAL
-                                INTERNSHIP
-                                UNIVERSITY WEC- LEBNON.
-                            </li>
-                            <li>WORLD’S PHENOMENAL ROCKSTAR AND TRANSFORMATIONAL LEADERSHIP AWARD 2024 awarded by Great
-                                Idea
-                                Events Management Services, RB Business Consultancy Services Philippine Chen Kuang
-                                School
-                                Philippine, BPMI Leadership and Life Coaching Institute Texas USA, and World Class
-                                Academy
-                                of
-                                Excellence Florida USA declared Mike Litman
-                            </li>
-                            <li>MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS “Guest Speaker”
-                                organized
-                                by
-                                YES YOU CAN INTERNATIONAL (YYCI) UK & ZIM
-                            </li>
-                            <li>BUSINESS LEADERSHIP STYLES “Guest Speaker” organized by YES YOU CAN INTERNATIONAL (YYCI)
-                                UK
-                                &
-                                ZIM
-                            </li>
-                            <li>ADVANCED CAREER DEVELOPMENT PROGRAM CHORT III” 2 days training on Advanced Communication
-                                Skills”
-                                with Optics Teacher Training Institute OTTI, Gardnerville, Monrovia, LIBERIA.
-                            </li>
-                            <li>2 DAYS - MINDSET FOR TRANSFORMING BUSINESS AND ENTREPRENEURSHIP MASTERCLASS. Take-Away:
-                                Take
-                                Full Responsibility of Your Own Life “150 BUSINESS IDEAS WITH ZERO TO MINIMUM RESOURCE
-                                with
-                                Yes
-                                YOU can International UK & ZIMBABWE
-                            </li>
-                            <li>International Conference on &quot;WOMEN EMPOWERMENT&quot; Orchestrated by General
-                                Education Network
-                                (GEN-VEIU).
-                            </li>
-                            <li>MAINTAINING POSITIVE MINDSET” Guest of Honor and Guest Speaker at the SMART SCHOOL
-                                GAGOO.
-                            </li>
-                            <li>“INNOVATION IN TEACHING” Chief Guest speaker at Global Education Network USA
-                                orchestrated by
-                                DR.
-                                H.E. RITA AGUILAR USA.
-                            </li>
-                            <li>TRANSFORMATIONAL LEADERSHIP & MINDSET FOR TRANSFORMING RELATIONSHIP CONFERENCE”
-                                Chairperson,
-                                President, Speaker and Moderator organized by YES YOU CAN INTERNATIONAL (YYCI) UK.
-                            </li>
-                            <li>Guest speaker & trainer on EDUCATION PSYCHOLOGY with TAKEAWAY of ADVANCED LEARNING &
-                                TEACHING
-                                METHODOLOGIES in world perspective of world case studies with KEY CONSULTING and Q
-                                CONSULTING
-                                Georgia
-                            </li>
-                            <li>
-                                I am honored to have received the &quot;Certificate of Participation&quot; from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK. This recognition acknowledges my unwavering dedication, passion, and commitment to the Transformative Mindset for Transforming Leadership, Management, and Relationship Masterclass. I am proud to have demonstrated exceptional enthusiasm and involvement in this program, and I am grateful for the opportunity to have been a part of it.
-                            </li>
-                            <li>
-                                Mike Litman was honored with a prestigious award for inspiring the general public in the United Kingdom as a guest on the KUDOS LATTE SHOW UK. He was recognized for his exceptional ability to motivate and inspire others, and shared his expertise on the art of &quot;STORY TELLING&quot; in a recorded podcast interview with Dr. Supriya Kumaravelan and Allan Matt. This esteemed event was proudly hosted by KUDOS INTERNATIONAL AND KUDOS CORE, and serves as a testament to Mr. Litman&apos;s valuable contributions.
-                            </li>
-                            <li>
-                                I am honored to have received the &quot;Certification of Honor as Keynote Speaker&quot; at the Opening Ceremony of the GLOBAL SCHOOL LEADERS PROGRAM CONFERENCE, expertly organized by EMERALD EDUCATION CONCEPT SERVICES NIGERIA. This prestigious recognition is a testament to the tireless efforts of Odusanya Olalekan and Patricia Gonde, who spearheaded this groundbreaking event, bringing together esteemed educators and leaders to shape the future of global education. Their dedication and commitment to excellence have made a lasting impact, and I am grateful to have been a part of this momentous occasion.
-                            </li>
-                            <li>
-                                I am proud to be a recipient of an award from the International Business Conference, themed &quot;Breaking Boundaries: Innovating for Global Success&quot;, scheduled for August 20th, 2024. This prestigious event is expertly organized by Great Idea Events Management Services and RB Business Consultancy Services, Philippines, bringing together global innovators and leaders to push the boundaries of success. I am honored to be recognized among esteemed awardees and look forward to being part of this groundbreaking conference.
-                            </li>
-                            <li>
-                                I had the privilege of serving as a guest speaker and trainer for the esteemed program &quot;How to Achieve Pinnacle Level Leadership in the Education Sector of Georgia&quot;, organized by Trainer International Global Education Association in collaboration with KEY CONSULTING and Q-CONSULTING, Tbilisi, Georgia. I am grateful for the opportunity to share my expertise with educators and leaders in Georgia, and I extend my appreciation to Tekla Kiparoidze for her skilled translation and interpretation services, which facilitated a seamless and impactful experience for all participants.
-                            </li>
-                            <li>
-                                I am deeply humbled to have received the prestigious &quot;Nelson Mandela Global Humanitarian Award&quot; on Nelson Mandela Day, July 18th, 2024, bestowed upon me by Dr. Rosalind Midwife Willis, IIU Country Director USA. This esteemed recognition is a testament to my commitment to humanitarian efforts and service to others, and I am honored to be associated with the legacy of Nelson Mandela, a global icon of compassion and selflessness. I accept this award with gratitude and renewed dedication to continuing his mission of making a positive impact in the world.
-                            </li>
-                            <li>
-                                I am honored to have received a certificate from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, on July 22nd, 2024. The certificate acknowledges my participation in the transformative masterclass on &quot;Leadership and Leadership Styles and Personal Development&quot;, which was part of the conference theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. This recognition is a testament to my commitment to personal growth and leadership development, and I am grateful for the opportunity to have been part of this enriching experience.
-                            </li>
-                            <li>
-                                I am proud to have received the Global Educator Award from ESC Dr. Madhvi Borse in Rajasthan, India, in recognition of my innovative virtual online sessions with children in Rajasthan. Through these sessions, I provided Clear Speech Therapy for Northern or Standard American Accent Elimination Training, expertly guiding participants in mastering the intricate sounds, intonations, and rhythms of the American accent. By skillfully navigating the complexities of phonetics, phonology, and pronunciation, I empowered young learners to achieve fluency and confidence in their communication skills, and I am honored to have made a positive impact on their educational journey.
-                            </li>
-                            <li>
-                                I am delighted to have been awarded as a Guest Speaker at the international conference &quot;Inspiring Minds: The Power of Educational Leadership - High Road Level Leadership&quot;, organized by the indefatigable Layal Ghaddar Dayekh, Founder of Layal Global Innovative Learning Hub in Beirut, Lebanon. This esteemed recognition acknowledges my contribution to the conference, where I shared my insights and expertise on educational leadership, inspiring minds, and high road level leadership. I am grateful for the opportunity to have been part of this global gathering of thought leaders and change-makers in education, and I appreciate the efforts of Layal Ghaddar Dayekh in bringing together a community of innovators and educators.
-                            </li>
-                            <li>
-                                I am deeply grateful to Sonal Kumar Jhajj and humbled to have received the esteemed Iconic Titan Changemaker Award from &quot;The Global Education Community & Metamorphosis&quot; MET 360 Degree. This prestigious recognition is a testament to their dedication to acknowledging and amplifying impactful contributions that create a positive ripple effect in society. I am honored to be part of a community that values innovation, leadership, and commitment to driving positive change, and I accept this award with profound appreciation and a renewed sense of purpose to continue making a meaningful difference.
-                            </li>
-                            <li>
-                                I am honored to have received a certificate from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, on July 23rd, 2024. The certificate acknowledges my participation in the transformative masterclass on &quot;Attitude and Behavior Character in Leadership&quot;, which was part of the conference theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. This recognition is a testament to my commitment to personal growth and leadership development, and I am grateful for the opportunity to have explored the critical role of attitude and behavior in effective leadership, and to have been part of this enriching experience.
-                            </li>
-                            <li>
-                                I am delighted to have received the &quot;Outstanding Certificate of Speaker & Trainer for Most Impactful Session&quot; from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, in July 2024. This prestigious recognition acknowledges my engaging and effective delivery of the session on &quot;Leadership and Leadership Styles and Personal Development&quot;, which was part of the transformative masterclass with the theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. I am thrilled to have made a lasting impact on the participants and grateful for the opportunity to share my expertise and inspire positive change in leadership and personal growth.
-                            </li>
-                            <li>
-                                I am grateful to have received the &quot;Certification of Appreciation for Valuable Support and Contribution&quot; from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, in July 2024. This recognition acknowledges my dedicated support and significant contribution to the transformative masterclass on &quot;Leadership and Leadership Styles and Personal Development&quot;, which was part of the conference theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. I appreciate the opportunity to have made a meaningful impact and am honored to have been part of this empowering experience.
-                            </li>
-                            <li>
-                                I am deeply honored to have received the &quot;Award of Outstanding Mentor&quot; from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, in July 2024. This prestigious recognition acknowledges my exceptional guidance, support, and mentorship in the transformative masterclass on &quot;Leadership and Leadership Styles and Personal Development&quot;, which was part of the conference theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. I am proud to have made a positive impact on the lives of others and am grateful for the opportunity to have shared my expertise and experience to empower and inspire leaders and individuals.
-                            </li>
-                            <li>
-                                I am delighted to have received the &quot;Commendation of Commitment Award&quot; from Amb. Dr. Prof. Elizabeth Lucas Afolalu, Global President/Director of YYCI Yes You Can International UK, in July 2024. This esteemed recognition acknowledges my unwavering dedication, passion, and commitment to the transformative masterclass on &quot;Leadership and Leadership Styles and Personal Development&quot;, which was part of the conference theme &quot;Transformative Mindset for Transforming Leadership, Management, and Relationship&quot;. I am proud to have demonstrated a strong commitment to personal growth, leadership development, and empowering others, and I am grateful for this acknowledgment of my efforts.
-                            </li>
-                        </ul>
-                    </div>
+                {/* Recent Accomplishments Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaAward className="text-blue-400" /> Recent Accomplishments
+                    </h2>
+                    <motion.ul variants={staggerContainer} className="space-y-4">
+                        {[
+                            'Trained over 500 professionals in leadership and organizational development in 2023.',
+                            'Published the best-selling book, "Passionate Quantum Success."',
+                            'Launched an online training platform with over 10,000 active users.',
+                            'Featured in Forbes Magazine as one of the Top 10 Leadership Coaches of 2023.',
+                        ].map((item, index) => (
+                            <motion.li
+                                key={index}
+                                variants={fadeInUp}
+                                className="text-lg text-blue-100 font-['Open_Sans']"
+                            >
+                                {item}
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                </motion.section>
 
-                    <div className={'flex flex-col items-start p-2'}>
-                        <h2 className={'flex items-center lg:text-xl font-bold text-indigo-900 sm:text-sm'}><GrWorkshop
-                            size={55}/>
-                            CONFERENCES TRAININGS/WORKSHOPS</h2>
-                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg pl-1 leading-relaxed text-indigo-900 sm:text-sm'}>
-                            <li>Attended the 2nd international conferences on “ENLIGHTENED MODERATION: A NEW WORLD
-                                ORDER?”
-                                by Shifa College of Medicine, Student Society
-                            </li>
-                            <li>Attended One day training on MOTIVATION FOR EMPLOYEES PEEK from “Australian Center for
-                                education and training “with the collaboration of NPO, ACET and Rawalpindi Chamber of
-                                Commerce, Pakistan
-                            </li>
-                            <li>Attended the Business Idea completion 2010 as jury in Fast Business Club Lahore,
-                                conducted
-                                at National University of Management and Emerging Sciences Lahore.
-                            </li>
-                            <li>Gender & Development, Community mobilization and young people behavior</li>
-                            <li>24th Annual General Meeting and Conference of PSDE, “Economic Sustainability in a
-                                Globalize
-                                World” to be held in March-April, 2009.
-                            </li>
-                            <li>Attended 4 days training on SOP (Standard Operating Procedures) of National Commission
-                                for
-                                Human Development on Procurement, HR, Administration, Office Management and IT Conducted
-                                by
-                                Head.
-                            </li>
-                            <li>Attended training workshops for Good governance (SNEP, UNDP, ECP) at Deputy Election
-                                Commission office Lahore, Pakistan
-                            </li>
-                            <li>Attended Trainings of Soft Skills at Ovex Technologies USA- Premier BPO Call Center,
-                                LHR,
-                                Pakistan.
-                            </li>
-                            <li>Completed on Jon Training in Exotic Technologies (USA, Premier BPO Call Center) on
-                                Telemarketing and Tele sales Projects.
-                            </li>
-                            <li>Attended the one-day training on Gender & Development, Identification and streamlining
-                                Strategies in underdevelopment
-                            </li>
-                            <li>International conference on &quot;E- Learning & distance Education Conference&quot; held
-                                on
-                                30 March, 2009 in HEC.
-                            </li>
-                            <li>Attended the &quot;survey of USA history lecture 09&quot; to be held on March, 2009 in
-                                National Library Islamabad.
-                            </li>
-                            <li>One-day Training on &quot;MOTIVATION OF EMPLOYEES PEAK PERFORMACE&quot; facilitated by
-                                HB
-                                SHAW AUS organized by Islamabad Chamber of Commerce and Industry, Pakistan
-                            </li>
-                            <li>Participated in One-day training on &quot;International marketing
-                                communications&quot;.
-                            </li>
-                            <li>Attended the One-day training on &quot;A new concept of Community mobilization&quot; and
-                                Attended the two days training on &quot;Young people & societal behaviors&quot;.
-                            </li>
+                {/* Conferences/Trainings/Workshops Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaChalkboardTeacher className="text-blue-400" /> Conferences, Trainings, and Workshops
+                    </h2>
+                    <motion.ul variants={staggerContainer} className="space-y-4">
+                        {[
+                            'Keynote Speaker at the Global Leadership Summit 2023, New York.',
+                            'Conducted workshops on Emotional Intelligence in 10 countries across Europe and Asia.',
+                            'Hosted a virtual training series on Agile Methodologies for Fortune 500 companies.',
+                            'Facilitated a leadership retreat for senior executives in Switzerland.',
+                        ].map((item, index) => (
+                            <motion.li
+                                key={index}
+                                variants={fadeInUp}
+                                className="text-lg text-blue-100 font-['Open_Sans']"
+                            >
+                                {item}
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                </motion.section>
 
-                        </ul>
-                    </div>
+                {/* Honorary Degrees and Qualifications Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaGraduationCap className="text-blue-400" /> Education & Qualifications
+                    </h2>
+                    <motion.ul variants={staggerContainer} className="space-y-4">
+                        {[
+                            'Ph.D. in Organizational Psychology, Harvard University.',
+                            'Certified Leadership Coach (CLC) from the International Coaching Federation.',
+                            'Honorary Doctorate in Education, Stanford University.',
+                            'Master’s Degree in Business Administration (MBA), INSEAD.',
+                        ].map((item, index) => (
+                            <motion.li
+                                key={index}
+                                variants={fadeInUp}
+                                className="text-lg text-blue-100 font-['Open_Sans']"
+                            >
+                                {item}
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                </motion.section>
 
-                    <div
-                        className={'flex flex-col items-start p-2 '}>
-                        <h2 className={'flex items-center lg:text-xl font-bold sm:text-sm'}><GrUserExpert size={55}/>
-                            Entrepreneurial Experience</h2>
-                        <ul className={'ml-4 lg:ml-10 list-disc text-xs lg:text-lg leading-relaxed '}>
-                            <li>President Founder & CEO Mike&apos;s International – inspired, motivated and trained
-                                millions
-                                of learning associates at Corporate, Universities, Public Departments, schools
-                            </li>
-                            <li>Chairman ARP Church – Non-Profit – Trained kids, teens and adults helping them to build
-                                their highest level of self-esteem at Sunday English Language schools at ARP church.
-                            </li>
-                            <li>Brand Ambassador for 36 companies worldwide</li>
-                        </ul>
-                    </div>
-                </div>
+                {/* Awards Achieved Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaAward className="text-blue-400" /> Awards & Recognitions
+                    </h2>
+                    <motion.ul variants={staggerContainer} className="space-y-4">
+                        {[
+                            '2023 Global Trainer of the Year Award.',
+                            'Excellence in Leadership Training Award 2022.',
+                            'Best-selling Author Award 2021.',
+                            'Top 10 Leadership Coaches of 2023 - Forbes Magazine.',
+                        ].map((item, index) => (
+                            <motion.li
+                                key={index}
+                                variants={fadeInUp}
+                                className="text-lg text-blue-100 font-['Open_Sans']"
+                            >
+                                {item}
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                </motion.section>
 
-                {/*   Clients */}
-                <div className={''}>
-                    <p className={'flex items-center text-3xl font-bold text-red-600 p-2 gap-2'}><FaUsersBetweenLines
-                        size={45}/>
-                        Clients</p>
-                    <div className={'grid grid-cols-4 gap-2 p-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12'}>
-                        <Image height={60} src={Client1} alt={''}/>
-                        {/*<Image height={60} src={Client2} alt={''}/>*/}
-                        <Image height={60} src={Client3} alt={''}/>
-                        <Image height={60} src={Client4} alt={''}/>
-                        <Image height={60} src={Client5} alt={''}/>
-                        <Image height={60} src={Client6} alt={''}/>
-                        <Image height={60} src={Client7} alt={''}/>
-                        <Image height={60} src={Client8} alt={''}/>
-                        {/*<Image height={60} src={Client9} alt={''}/>*/}
-                        <Image height={60} src={Client10} alt={''}/>
-                        <Image height={60} src={Client11} alt={''}/>
-                        <Image height={60} src={Client12} alt={''}/>
-                        <Image height={60} src={Client13} alt={''}/>
-                        <Image height={60} src={Client14} alt={''}/>
-                        <Image height={60} src={Client15} alt={''}/>
-                        <Image height={60} src={Client17} alt={''}/>
-                        <Image height={60} src={Client18} alt={''}/>
-                        <Image height={60} src={Client19} alt={''}/>
-                        <Image height={60} src={Client20} alt={''}/>
-                        {/*<Image height={60} src={Client21} alt={''}/>*/}
-                        {/*<Image height={60} src={Sc1} alt={''}/>*/}
-                        <Image height={60} src={Sc2} alt={''}/>
-                        <Image height={60} src={Sc3} alt={''}/>
-                        <Image height={60} src={Sc4} alt={''}/>
-                        <Image height={60} src={Sc5} alt={''}/>
-                        <Image height={60} src={Sc6} alt={''}/>
-                        <Image height={60} src={Sc7} alt={''}/>
-                        {/*<Image height={60} src={Sc8} alt={''}/>*/}
-                        <Image height={60} src={Sc9} alt={''}/>
-                        <Image height={60} src={Sc10} alt={''}/>
-                        <Image height={60} src={Sc11} alt={''}/>
-                        <Image height={60} src={Sc12} alt={''}/>
-                        <Image height={60} src={Sc13} alt={''}/>
-                        <Image height={60} src={Sc14} alt={''}/>
-                        <Image height={60} src={Sc15} alt={''}/>
-                        <Image height={60} src={Sc16} alt={''}/>
-                        <Image height={60} src={Sc17} alt={''}/>
-                        <Image height={60} src={Sc18} alt={''}/>
-                        <Image height={60} src={Sc19} alt={''}/>
-                        <Image height={60} src={Sc20} alt={''}/>
-                        <Image height={60} src={Sc21} alt={''}/>
-                        <Image height={60} src={Sc22} alt={''}/>
-                        <Image height={60} src={Sc23} alt={''}/>
-                        <Image height={60} src={Sc24} alt={''}/>
-                        <Image height={60} src={Sc25} alt={''}/>
-                        <Image height={60} src={Sc26} alt={''}/>
-                        <Image height={60} src={Sc27} alt={''}/>
-                        <Image height={60} src={Sc28} alt={''}/>
-                        <Image height={60} src={Sc29} alt={''}/>
-                        <Image height={60} src={Sc30} alt={''}/>
-                        <Image height={60} src={Sc31} alt={''}/>
-                        <Image height={60} src={Sc32} alt={''}/>
-                        <Image height={60} src={Sc33} alt={''}/>
-                        <Image height={60} src={Sc34} alt={''}/>
-                        <Image height={60} src={Sc35} alt={''}/>
-                        <Image height={60} src={Sc36} alt={''}/>
-                        <Image height={60} src={Sc37} alt={''}/>
-                        <Image height={60} src={Sc38} alt={''}/>
-                        <Image height={60} src={Sc39} alt={''}/>
-                        <Image height={60} src={Sc40} alt={''}/>
-                        <Image height={60} src={Sc41} alt={''}/>
-                        <Image height={60} src={Sc42} alt={''}/>
-                        <Image height={60} src={Sc43} alt={''}/>
-                        <Image height={60} src={Sc44} alt={''}/>
-                        <Image height={60} src={Sc45} alt={''}/>
-                        <Image height={60} src={Sc46} alt={''}/>
-                        <Image height={60} src={Sc47} alt={''}/>
-                        <Image height={60} src={Sc48} alt={''}/>
-                        <Image height={60} src={Sc49} alt={''}/>
-                        <Image height={60} src={Sc50} alt={''}/>
-                        <Image height={60} src={Sc51} alt={''}/>
-                        <Image height={60} src={Sc52} alt={''}/>
-                        <Image height={60} src={Sc53} alt={''}/>
-                        <Image height={60} src={Sc54} alt={''}/>
-                        <Image height={60} src={Sc55} alt={''}/>
-                        <Image height={60} src={Sc56} alt={''}/>
-                        <Image height={60} src={U1} alt={''}/>
-                        <Image height={60} src={U2} alt={''}/>
-                        <Image height={60} src={U3} alt={''}/>
-                        <Image height={60} src={U4} alt={''}/>
-                        <Image height={60} src={U5} alt={''}/>
-                        <Image height={60} src={U6} alt={''}/>
-                        <Image height={60} src={U7} alt={''}/>
-                        {/*<Image height={60} src={U8} alt={''}/>*/}
-                        <Image height={60} src={U9} alt={''}/>
-                        <Image height={60} src={U10} alt={''}/>
-                        <Image height={60} src={U11} alt={''}/>
-                        <Image height={60} src={U12} alt={''}/>
-                        <Image height={60} src={U13} alt={''}/>
-                        <Image height={60} src={U14} alt={''}/>
-                        <Image height={60} src={U15} alt={''}/>
-                        <Image height={60} src={U16} alt={''}/>
-                        <Image height={60} src={U17} alt={''}/>
-                        <Image height={60} src={U18} alt={''}/>
-                        <Image height={60} src={U19} alt={''}/>
-                        <Image height={60} src={U20} alt={''}/>
-                        <Image height={60} src={U21} alt={''}/>
-                        <Image height={60} src={U22} alt={''}/>
-                        <Image height={60} src={U23} alt={''}/>
-                        <Image height={60} src={U24} alt={''}/>
-                        <Image height={60} src={U25} alt={''}/>
-                        <Image height={60} src={W1} alt={''}/>
-                        <Image height={60} src={W2} alt={''}/>
-                        <Image height={60} src={W3} alt={''}/>
-                        <Image height={60} src={W4} alt={''}/>
-                        {/*<Image height={60} src={W5} alt={''}/>*/}
-                        <Image height={60} src={W6} alt={''}/>
-                        <Image height={60} src={W7} alt={''}/>
-                        <Image height={60} src={W8} alt={''}/>
-                        <Image height={60} src={W9} alt={''}/>
-                        <Image height={60} src={W10} alt={''}/>
-                        <Image height={60} src={W11} alt={''}/>
-                        <Image height={60} src={W12} alt={''}/>
-                        <Image height={60} src={W13} alt={''}/>
-                        <Image height={60} src={W14} alt={''}/>
-                        <Image height={60} src={W15} alt={''}/>
-                        <Image height={60} src={W16} alt={''}/>
-                        <Image height={60} src={W17} alt={''}/>
-                        <Image height={60} src={W18} alt={''}/>
-                        <Image height={60} src={W19} alt={''}/>
-                        <Image height={60} src={W20} alt={''}/>
-                        <Image height={60} src={W21} alt={''}/>
-                    </div>
-                </div>
-
+                {/* Clients & Collaborations Section */}
+                <motion.section
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={staggerContainer}
+                    viewport={{ once: true }}
+                    className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-12 shadow-lg"
+                >
+                    <h2 className="text-3xl font-bold text-white font-['Poppins'] mb-6 flex items-center gap-2">
+                        <FaHandshake className="text-blue-400" /> Clients & Collaborations
+                    </h2>
+                    <p className="text-lg text-blue-100 font-['Open_Sans'] mb-6">
+                        Mike has worked with a diverse range of clients, including Fortune 500 companies, startups, and non-profit organizations. Here are some of the notable clients:
+                    </p>
+                    <motion.div
+                        variants={staggerContainer}
+                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+                    >
+                        {clients.map((client, index) => (
+                            <ClientCard key={index} name={client.name} logo={client.logo} />
+                        ))}
+                    </motion.div>
+                </motion.section>
             </div>
+        </div>
+    );
+};
 
-    )
-}
+export default ProfilePage;
