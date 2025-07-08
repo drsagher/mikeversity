@@ -36,7 +36,7 @@ export default function AwardsPage() {
                         <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transform transition-all hover:scale-105 hover:shadow-xl">
                             <div className="flex items-center gap-4 mb-4">
                                 <FaAward size={32} className="text-green-600" />
-                                <h3 className="text-xl font-bold text-gray-800">World's Phenomenal Leadership Award</h3>
+                                <h3 className="text-xl font-bold text-gray-800">World&apos;s Phenomenal Leadership Award</h3>
                             </div>
                             <p className="text-gray-700">
                                 Awarded for exceptional leadership and innovation in the field of business coaching.

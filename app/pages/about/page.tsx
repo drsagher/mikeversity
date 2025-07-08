@@ -15,7 +15,7 @@ const ClientCard: React.FC<{ name: string; logo: string }> = ({ name, logo }) =>
             }}
             className="bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col items-center justify-center gap-2 shadow-md hover:shadow-lg transition-shadow duration-300"
         >
-            <img src={logo} alt={name} className="w-16 h-16 object-contain" />
+            <Image src={logo} alt={name} className="w-16 h-16 object-contain" />
             <p className="text-lg text-white font-['Open_Sans'] text-center">{name}</p>
         </motion.div>
     );

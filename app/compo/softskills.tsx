@@ -172,12 +172,8 @@ export default function SoftSkillsDevelopment() {
     };
 
     return (
-        <>
-            <Head>
-                <title>Master Essential Soft Skills | Professional Development</title>
-                <meta name="description" content="Develop critical soft skills for career success - communication, leadership, emotional intelligence and more" />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-            </Head>
+        <div>
+
 
             <div
                 ref={componentRef}
@@ -447,6 +443,6 @@ export default function SoftSkillsDevelopment() {
                     </motion.section>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

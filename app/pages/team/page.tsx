@@ -6,32 +6,6 @@ import { FaLinkedin, FaTwitter, FaGlobe, FaBook, FaGraduationCap, FaAward, FaMic
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
-// Import all team member images
-import DrElizabethLucas from '@/public/team/DrElizabethLucas.jpeg';
-import CalebTimilehinSamuel from '@/public/team/CalebTimilehinSamuel.jpeg';
-import DrLaKishaJames from '@/public/team/DrLaKishaJames.jpeg';
-import DrMadhviBorse from '@/public/team/DrMadhviBorse.jpeg';
-import DrRosalindWillis from '@/public/team/DrRosalindWillis.jpeg';
-import DrShawnSaxton from '@/public/team/DrShawnSaxton.jpeg';
-import HerdianaDewiNurfika from '@/public/team/HerdianaDewiNurfika.jpeg';
-import LikaOkhanashvili from '@/public/team/LikaOkhanashvili.jpeg';
-import TeklaKiparoidze from '@/public/team/TeklaKiparoidze.jpeg';
-import ChanieMessinger from '@/public/team/ChanieMessinger.jpg';
-import SHAHIDIQBAL from '@/public/team/SHAHIDIQBAL.jpeg';
-import DrAmb from '@/public/team/DrAmb.png';
-import DRANITA from '@/public/team/DRANITA.png';
-import IlonaParunakova from '@/public/team/IlonaParunakova.png';
-import DanelleBoyles from '@/public/team/DanelleBoyles.jpeg';
-import VeronicaRozenfeld from '@/public/team/VeronicaRozenfeld.jpeg';
-import LayalGhaddar from '@/public/team/LayalGhaddar.png';
-import MahaShhadeh from '@/public/team/MahaShhadeh.png';
-import DrHCK from '@/public/team/DrHCK.jpg';
-import MJTolan from '@/public/team/MJTolan.jpg';
-import DrAntoinette from '@/public/team/DrAntoinette.jpg';
-import SonalJhajj from '@/public/team/SonalJhajj.jpg';
-import Agata from '@/public/team/Agata.jpg';
-import SusanMahgouub from '@/public/team/SusanMahgouub.jpg';
-import DrSupriyaKumaravelan from '@/public/team/DrSupriyaKumaravelan.jpg';
 
 // Define types
 interface Link {
@@ -63,7 +37,7 @@ const TeamPage = () => {
     const ceoProfile: TeamMember = {
         id: 0,
         name: 'Prof. Dr. Queen Elizabeth Lucas-Afolalu',
-        image: DrElizabethLucas,
+        image: '/team/DrElizabethLucas.jpeg',
         role: 'CEO & Global Transformational Leader',
         bio: 'Visionary leader with over 20 years of experience in global education transformation. Dr. Lucas-Afolalu has pioneered innovative learning methodologies that have impacted over 50,000 professionals worldwide. Her leadership has positioned Mikeversity at the forefront of digital education.',
         country: 'United Kingdom',
@@ -87,7 +61,7 @@ const TeamPage = () => {
         {
             id: 1,
             name: 'Dr. Rosalind Willis',
-            image: DrRosalindWillis,
+            image: '/team/DrRosalindWillis.jpeg',
             role: 'Birthing Purpose Coach & USA Country Director',
             bio: 'Award-winning international speaker and author. Sought-after Global Transformational Speaker renowned for her expertise and inspiring presentations. With a PhD in Transformational Leadership, she has coached over 1,000 professionals to discover their life purpose.',
             country: 'United States',
@@ -497,7 +471,7 @@ const TeamPage = () => {
                             <span className="block">Join Our Global Network</span>
                         </h2>
                         <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-300">
-                            We're expanding our team of world-class educators and thought leaders.
+                            We&apos;re expanding our team of world-class educators and thought leaders.
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                             <a

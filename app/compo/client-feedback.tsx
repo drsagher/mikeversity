@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { FaStar, FaRegStar } from 'react-icons/fa';
+import Image from "next/image";
 
 export default function ClientFeedbackComponent() {
     const controls = useAnimation();
@@ -148,7 +149,7 @@ export default function ClientFeedbackComponent() {
                             <div className="flex gap-4 mb-4">
                                 {/* Client Image */}
                                 <div className="w-16 h-16 overflow-hidden rounded-full border-4 border-white flex-shrink-0">
-                                    <img
+                                    <Image
                                         src={testimonial.image}
                                         alt={testimonial.name}
                                         className="w-full h-full object-cover"
@@ -168,7 +169,7 @@ export default function ClientFeedbackComponent() {
                             </div>
                             {/* Second Row: Feedback */}
                             <p className="text-sm text-white text-opacity-90 italic">
-                                "{testimonial.feedback}"
+                                &quot;{testimonial.feedback}&quot;
                             </p>
                         </motion.div>
                     ))}

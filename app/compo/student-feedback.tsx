@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { FaStar, FaRegStar } from 'react-icons/fa';
+import Image from "next/image";
 
 export default function TraineesCommentsComponent() {
     const controls = useAnimation();
@@ -184,7 +185,7 @@ export default function TraineesCommentsComponent() {
                             <div className="flex items-center gap-4 mb-4">
                                 {/* Trainee Image */}
                                 <div className="w-16 h-16 overflow-hidden rounded-full border-4 border-purple-500 flex-shrink-0">
-                                    <img
+                                    <Image
                                         src={trainee.image}
                                         alt={trainee.name}
                                         className="w-full h-full object-cover"
@@ -202,7 +203,7 @@ export default function TraineesCommentsComponent() {
                             </div>
                             {/* Trainee Feedback */}
                             <p className="text-sm text-gray-700 italic">
-                                "{trainee.feedback}"
+                                &quot;{trainee.feedback}&quot;
                             </p>
                         </motion.div>
                     ))}

@@ -274,7 +274,7 @@ export default function WhyMikeversity() {
                                         ))}
                                     </div>
                                     <blockquote className="text-lg italic text-gray-200 mb-6">
-                                        &quot;The global network alone was worth the investment. My current startup was co-founded with two Mikeversity alumni I met during the program, and we've secured $14M in Series A funding.&quot;
+                                        &quot;The global network alone was worth the investment. My current startup was co-founded with two Mikeversity alumni I met during the program, and we&apos;ve secured $14M in Series A funding.&quot;
                                     </blockquote>
                                     <div className="text-emerald-300 font-medium">
                                         — Marcus Chen, CEO of NeuroLink AI
